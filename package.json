@@ -1,0 +1,48 @@
+{
+  "name": "speedlify2",
+  "version": "1.0.0",
+  "description": "Measure web performance metrics across a list of sites and compare them over time. Static output.",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "measure": "node ./bin/speedlify.js measure",
+    "backfill": "node ./bin/speedlify.js backfill",
+    "report": "node ./bin/speedlify.js report",
+    "build": "npm run report && npx @awesome.me/buildawesome",
+    "start": "npm run report && npx @awesome.me/buildawesome --serve --incremental",
+    "check": "node ./bin/speedlify.js check",
+    "list": "node ./bin/speedlify.js list",
+    "test": "node --test \"test/*.test.js\"",
+    "clean": "node ./bin/speedlify.js prune",
+    "purge": "node ./scripts/purge-excluded.mjs",
+    "prune:filmstrips": "node ./scripts/prune-filmstrips.mjs",
+    "reset": "node ./scripts/reset.mjs",
+    "check:companies": "node ./scripts/check-companies.mjs",
+    "import:11ty": "npm run import:11ty-community && npm run import:11ty-starters",
+    "import:11ty-community": "node ./scripts/import-11ty-community.mjs",
+    "import:11ty-starters": "node ./scripts/import-11ty-starters.mjs",
+    "import:astro-showcase": "node ./scripts/import-astro-showcase.mjs"
+  },
+  "devDependencies": {
+    "@awesome.me/buildawesome": "4.0.0-alpha.10",
+    "@axe-core/puppeteer": "^4.13.0",
+    "axe-core": "^4.13.0",
+    "chrome-launcher": "^1.2.1",
+    "lighthouse": "^13.4.1",
+    "lightningcss": "^1.33.0",
+    "puppeteer-core": "^25.7.0"
+  },
+  "dependencies": {
+    "@11ty/font-awesome": "^1.0.1",
+    "@zachleat/solar-eclipse-toggle": "^2.2.1",
+    "@zachleat/table-of-contents": "^1.0.1",
+    "simple-icons": "^16.28.0"
+  },
+  "engines": {
+    "node": ">=22.19"
+  }
+}
