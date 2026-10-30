@@ -8,10 +8,10 @@ name: Publish
 # measurement jobs are mid-flight.
 
 on:
-  schedule:
-    # Hourly. Measurement runs on its own cadence; this just publishes the
-    # latest state of the dataset.
-    - cron: "30 * * * *"
+#  schedule:
+#    # Hourly. Measurement runs on its own cadence; this just publishes the
+#    # latest state of the dataset.
+#    - cron: "30 * * * *"
   push:
     branches: [main]
     # Rebuild when data lands or when the site itself changes.

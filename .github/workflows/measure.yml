@@ -11,13 +11,13 @@ name: Measure
 # less often. Neither choice requires changing anything else.
 
 on:
-  schedule:
-    # Hourly. With batch=20 and 4 shards that is 1,920 sites/day — the same
-    # throughput as before, arriving in smaller, more frequent pieces. Shorter
-    # runs matter more than the total: Lighthouse does not fully release memory
-    # between runs, and a job that ends sooner is a job that cannot exhaust the
-    # heap or overrun the timeout mid-batch.
-    - cron: "0 * * * *"
+#  schedule:
+#    # Hourly. With batch=20 and 4 shards that is 1,920 sites/day — the same
+#    # throughput as before, arriving in smaller, more frequent pieces. Shorter
+#    # runs matter more than the total: Lighthouse does not fully release memory
+#    # between runs, and a job that ends sooner is a job that cannot exhaust the
+#    # heap or overrun the timeout mid-batch.
+#    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       batch:
