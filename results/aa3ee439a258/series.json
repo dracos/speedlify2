@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.realtimetrains.co.uk/search/detailed/gb-nr:BTN","updated":"2026-10-31T11:01:26.159Z","points":[
+{"t":1793444425836,"performance":50,"accessibility":92,"best-practices":58,"seo":100,"lcp":14507,"cls":0.239,"tbt":373,"fcp":2145,"si":4080,"ttfb":623,"total":1821588,"requests":69,"bytes":1496454,"mainThreadMs":244.8,"unusedJsBytes":703834,"unusedCssBytes":69141,"mainThreadTotal":2341.4,"longTasks":13,"elements":1427,"failingCount":3,"failingNodes":48,"axeViolations":56,"axePasses":1813,"field-lcp":717,"field-inp":78,"field-cls":0,"field-fcp":633,"field-ttfb":303,"bench":3169,"runs":3,"reqRuns":3,"ms":60271,"spread":3}
+]}

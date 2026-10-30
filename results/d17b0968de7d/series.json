@@ -1,0 +1,3 @@
+{"version":1,"url":"https://traintimes.org.uk/","updated":"2026-10-31T11:41:26.215Z","points":[
+{"t":1793446851365,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":807,"cls":0,"tbt":0,"fcp":807,"si":807,"ttfb":637,"total":21047,"requests":9,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":201.8,"longTasks":0,"elements":221,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":441,"field-lcp":433,"field-inp":102,"field-cls":0,"field-fcp":431,"field-ttfb":251,"bench":3265,"runs":3,"reqRuns":3,"ms":34804,"spread":0}
+]}

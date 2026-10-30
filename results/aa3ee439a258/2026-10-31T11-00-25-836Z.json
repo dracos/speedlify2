@@ -1,0 +1,462 @@
+{
+  "url": "https://www.realtimetrains.co.uk/search/detailed/gb-nr:BTN",
+  "name": "RealTimeTrains LDB",
+  "group": "other_train",
+  "groupName": "Other train sites",
+  "timestamp": 1793444425836,
+  "date": "2026-10-31T11:00:25.836Z",
+  "runId": "2026-10-31T10-59-26-480Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 60271,
+  "error": null,
+  "variance": {
+    "min": 47,
+    "max": 50,
+    "spread": 3,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.realtimetrains.co.uk/search/detailed/gb-nr:BTN",
+    "finalUrl": "https://www.realtimetrains.co.uk/search/detailed/gb-nr:BTN",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 50,
+      "accessibility": 92,
+      "best-practices": 58,
+      "seo": 100,
+      "agentic-browsing": 76
+    },
+    "timings": {
+      "fcp": 2145,
+      "lcp": 14507,
+      "si": 4080,
+      "tbt": 373,
+      "tti": 14576,
+      "cls": 0.239,
+      "ttfb": 623,
+      "maxPotentialFid": 167,
+      "serverResponseTime": 33,
+      "networkRtt": 90.8,
+      "networkServerLatency": 176.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 34.4,
+      "elementRenderDelay": 610.3
+    },
+    "weight": {
+      "total": 1821588,
+      "requests": 69,
+      "mainDocument": 14170,
+      "byType": {
+        "total": {
+          "bytes": 1821588,
+          "requests": 68
+        },
+        "script": {
+          "bytes": 1486869,
+          "requests": 33
+        },
+        "other": {
+          "bytes": 167367,
+          "requests": 24
+        },
+        "font": {
+          "bytes": 75004,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 73191,
+          "requests": 1
+        },
+        "document": {
+          "bytes": 14658,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 4499,
+          "requests": 5
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1497523,
+          "requests": 53
+        }
+      },
+      "scripts": 33,
+      "stylesheets": 1,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 15,
+      "bytes": 1496454,
+      "mainThreadMs": 244.8,
+      "top": [
+        {
+          "entity": "InMobi",
+          "bytes": 380931,
+          "mainThreadMs": 38,
+          "byType": {
+            "script": 252147,
+            "other": 128784
+          },
+          "typedBytes": 380931
+        },
+        {
+          "entity": "Google/Doubleclick Ads",
+          "bytes": 282875,
+          "mainThreadMs": 27.8,
+          "byType": {
+            "script": 258042,
+            "other": 24833
+          },
+          "typedBytes": 282875
+        },
+        {
+          "entity": "aditude.io",
+          "bytes": 272733,
+          "mainThreadMs": 43,
+          "byType": {
+            "script": 266878,
+            "other": 5855
+          },
+          "typedBytes": 272733
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 165498,
+          "mainThreadMs": 28.2,
+          "byType": {
+            "script": 165498
+          },
+          "typedBytes": 165498
+        },
+        {
+          "entity": "cloudfront.net",
+          "bytes": 123429,
+          "mainThreadMs": 18.8,
+          "byType": {
+            "script": 123429
+          },
+          "typedBytes": 123429
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 2341.4,
+      "byGroup": {
+        "scriptEvaluation": 1407.2,
+        "scriptParseCompile": 341.4,
+        "other": 264.4,
+        "styleLayout": 202.8,
+        "garbageCollection": 68,
+        "parseHTML": 29.9,
+        "paintCompositeRender": 27.6
+      },
+      "bootupMs": 1547.1,
+      "longTasks": 13,
+      "longestTaskMs": 167
+    },
+    "dom": {
+      "elements": 1427,
+      "depth": 14,
+      "maxChildren": 58
+    },
+    "waste": {
+      "unusedJsBytes": 703834,
+      "unusedCssBytes": 69141,
+      "legacyJsBytes": 23393,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 3265,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 577033.3458333331,
+      "poorlyCachedCount": 37
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 30,
+      "failingNodes": 48,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "weight": 7,
+          "nodes": 45
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "weight": 7,
+          "nodes": 2
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "weight": 3,
+          "nodes": 1
+        }
+      ]
+    },
+    "bestPractices": {
+      "failingCount": 3,
+      "applicableCount": 20,
+      "failing": [
+        {
+          "id": "deprecations",
+          "title": "Uses deprecated APIs",
+          "weight": 5,
+          "nodes": 1
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "weight": 5,
+          "nodes": 1
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "weight": 1,
+          "nodes": 1
+        }
+      ]
+    },
+    "seo": {
+      "failingCount": 0,
+      "applicableCount": 9,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "http/1.1",
+      "legacyHttpRequests": 15,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 27
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3169,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-31T11:00:43.961Z",
+      "runtimeMs": 8203.3
+    }
+  },
+  "throttledLcpBreakdown": {
+    "timeToFirstByte": 1125.9,
+    "elementRenderDelay": 11116.2
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-10-02",
+      "last": "2026-10-29"
+    },
+    "metrics": {
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 94.2,
+          "needsImprovement": 5.3,
+          "poor": 0.6
+        }
+      },
+      "ttfb": {
+        "p75": 303,
+        "rating": "good",
+        "distribution": {
+          "good": 93.4,
+          "needsImprovement": 4.6,
+          "poor": 2.1
+        }
+      },
+      "fcp": {
+        "p75": 633,
+        "rating": "good",
+        "distribution": {
+          "good": 95.7,
+          "needsImprovement": 2.5,
+          "poor": 1.8
+        }
+      },
+      "inp": {
+        "p75": 78,
+        "rating": "good",
+        "distribution": {
+          "good": 94.8,
+          "needsImprovement": 3.7,
+          "poor": 1.5
+        }
+      },
+      "lcp": {
+        "p75": 717,
+        "rating": "good",
+        "distribution": {
+          "good": 93.1,
+          "needsImprovement": 5,
+          "poor": 1.9
+        }
+      },
+      "rtt": {
+        "p75": 106,
+        "rating": null,
+        "distribution": {
+          "good": 53.1,
+          "needsImprovement": 41,
+          "poor": 5.9
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "probe": {
+      "metas": [],
+      "marks": [
+        "preact"
+      ],
+      "markVersions": {}
+    },
+    "interstitial": null,
+    "host": {
+      "id": "mythic-beasts",
+      "name": "Mythic Beasts",
+      "icon": "mythic",
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 56,
+    "passes": 1813,
+    "incomplete": 84,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 53,
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".ad-slot:nth-child(8)",
+            "snippet": "<div class=\"ad-slot\" style=\"min-height:70px\">ADVERTISEMENT<div id=\"inline-ads-1\" style=\"max-height:100px;overflow:hidden\"></div></div>"
+          },
+          {
+            "selector": ".origin.service:nth-child(14) > .exp.real.c",
+            "snippet": "<div class=\"time real d exp c \">1056</div>"
+          },
+          {
+            "selector": ".ad-slot:nth-child(15)",
+            "snippet": "<div class=\"ad-slot\" style=\"min-height:70px\">ADVERTISEMENT<div id=\"inline-ads-2\" style=\"max-height:100px;overflow:hidden\"></div></div>"
+          },
+          {
+            "selector": ".service:nth-child(18) > .exp.real.a",
+            "snippet": "<div class=\"time real a exp c \">1106</div>"
+          },
+          {
+            "selector": ".origin.service:nth-child(19) > .exp.real.c",
+            "snippet": "<div class=\"time real d exp c \">1104</div>"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".top-bar-title",
+            "snippet": "<div class=\"top-bar-title\"> <div class=\"logo-container\"> <a href=\"/\"><div class=\"logo\" aria-label=\"RTT Logo\"></div></a> </div> </div>"
+          },
+          {
+            "selector": "#title-bar-title",
+            "snippet": "<div class=\"title-bar-title\" id=\"title-bar-title\">Menu</div>"
+          }
+        ]
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Heading levels should only increase by one",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/heading-order?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "#popular-departures-footer > h5",
+            "snippet": "<h5>Popular Departure Boards</h5>"
+          }
+        ]
+      }
+    ],
+    "error": null
+  },
+  "render": {
+    "samples": [
+      {
+        "hash": "d0a26d6f7dc4",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {}
+      },
+      {
+        "hash": "d0a26d6f7dc4",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {}
+      },
+      {
+        "hash": "c8953e04f656",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {}
+      },
+      {
+        "hash": "c8953e04f656",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {}
+      },
+      {
+        "hash": "c16a8842deda",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {}
+      }
+    ]
+  },
+  "consecutiveFailures": 0
+}

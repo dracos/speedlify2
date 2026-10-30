@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.nationalrail.co.uk/live-trains/departures/birmingham-new-street","updated":"2026-10-31T10:46:27.194Z","points":[
+{"t":1793443518033,"performance":24,"accessibility":100,"best-practices":73,"seo":100,"lcp":19440,"cls":0.373,"tbt":1421,"fcp":1856,"si":6854,"ttfb":966,"total":2871243,"requests":96,"bytes":1345082,"mainThreadMs":192.5,"unusedJsBytes":1034940,"unusedCssBytes":12548,"mainThreadTotal":3781.3,"longTasks":18,"elements":909,"failingCount":1,"failingNodes":21,"axeViolations":1,"axePasses":1825,"field-lcp":2321,"field-inp":540,"field-cls":0.18,"field-fcp":1521,"field-ttfb":955,"bench":3151,"runs":3,"reqRuns":3,"ms":69119,"spread":14}
+]}

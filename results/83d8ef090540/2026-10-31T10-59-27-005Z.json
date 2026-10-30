@@ -1,0 +1,446 @@
+{
+  "url": "https://www.realtimetrains.co.uk/",
+  "name": "RealTimeTrains front",
+  "group": "other_train",
+  "groupName": "Other train sites",
+  "timestamp": 1793444367005,
+  "date": "2026-10-31T10:59:27.005Z",
+  "runId": "2026-10-31T10-59-26-480Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 58779,
+  "error": null,
+  "variance": {
+    "min": 56,
+    "max": 57,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.realtimetrains.co.uk/",
+    "finalUrl": "https://www.realtimetrains.co.uk/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 56,
+      "accessibility": 95,
+      "best-practices": 58,
+      "seo": 100,
+      "agentic-browsing": 83
+    },
+    "timings": {
+      "fcp": 2142,
+      "lcp": 12767,
+      "si": 3947,
+      "tbt": 309,
+      "tti": 12767,
+      "cls": 0.184,
+      "ttfb": 621,
+      "maxPotentialFid": 113,
+      "serverResponseTime": 23,
+      "networkRtt": 90.3,
+      "networkServerLatency": 164.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 23.9,
+      "elementRenderDelay": 510.7
+    },
+    "weight": {
+      "total": 1814867,
+      "requests": 68,
+      "mainDocument": 7702,
+      "byType": {
+        "total": {
+          "bytes": 1814867,
+          "requests": 68
+        },
+        "script": {
+          "bytes": 1485569,
+          "requests": 32
+        },
+        "other": {
+          "bytes": 167116,
+          "requests": 23
+        },
+        "font": {
+          "bytes": 75004,
+          "requests": 3
+        },
+        "stylesheet": {
+          "bytes": 73854,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 8190,
+          "requests": 2
+        },
+        "image": {
+          "bytes": 5134,
+          "requests": 6
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1497998,
+          "requests": 52
+        }
+      },
+      "scripts": 32,
+      "stylesheets": 2,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 14,
+      "bytes": 1496928,
+      "mainThreadMs": 248,
+      "top": [
+        {
+          "entity": "InMobi",
+          "bytes": 380926,
+          "mainThreadMs": 39.9,
+          "byType": {
+            "script": 252147,
+            "other": 128779
+          },
+          "typedBytes": 380926
+        },
+        {
+          "entity": "Google/Doubleclick Ads",
+          "bytes": 283618,
+          "mainThreadMs": 29,
+          "byType": {
+            "script": 258785,
+            "other": 24833
+          },
+          "typedBytes": 283618
+        },
+        {
+          "entity": "aditude.io",
+          "bytes": 272278,
+          "mainThreadMs": 42.1,
+          "byType": {
+            "script": 266880,
+            "other": 5398
+          },
+          "typedBytes": 272278
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 165496,
+          "mainThreadMs": 15,
+          "byType": {
+            "script": 165496
+          },
+          "typedBytes": 165496
+        },
+        {
+          "entity": "cloudfront.net",
+          "bytes": 123429,
+          "mainThreadMs": 18.5,
+          "byType": {
+            "script": 123429
+          },
+          "typedBytes": 123429
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 1942,
+      "byGroup": {
+        "scriptEvaluation": 1195,
+        "scriptParseCompile": 342.2,
+        "other": 255.3,
+        "styleLayout": 69.4,
+        "garbageCollection": 42.1,
+        "parseHTML": 24.4,
+        "paintCompositeRender": 13.6
+      },
+      "bootupMs": 1330.9,
+      "longTasks": 11,
+      "longestTaskMs": 113
+    },
+    "dom": {
+      "elements": 245,
+      "depth": 13,
+      "maxChildren": 14
+    },
+    "waste": {
+      "unusedJsBytes": 705834,
+      "unusedCssBytes": 71135,
+      "legacyJsBytes": 23393,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 3255,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 576966.1291666668,
+      "poorlyCachedCount": 38
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 28,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "weight": 3,
+          "nodes": 2
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "weight": 7,
+          "nodes": 2
+        }
+      ]
+    },
+    "bestPractices": {
+      "failingCount": 3,
+      "applicableCount": 20,
+      "failing": [
+        {
+          "id": "deprecations",
+          "title": "Uses deprecated APIs",
+          "weight": 5,
+          "nodes": 1
+        },
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "weight": 5,
+          "nodes": 1
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "weight": 1,
+          "nodes": 1
+        }
+      ]
+    },
+    "seo": {
+      "failingCount": 0,
+      "applicableCount": 8,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "http/1.1",
+      "legacyHttpRequests": 16,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 27
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3267.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-31T10:59:36.744Z",
+      "runtimeMs": 8238.4
+    }
+  },
+  "throttledLcpBreakdown": {
+    "timeToFirstByte": 1125.9,
+    "elementRenderDelay": 10961.9
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-10-02",
+      "last": "2026-10-29"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 137,
+        "rating": null,
+        "distribution": {
+          "good": 46.1,
+          "needsImprovement": 42.2,
+          "poor": 11.6
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 97.8,
+          "needsImprovement": 2,
+          "poor": 0.3
+        }
+      },
+      "ttfb": {
+        "p75": 463,
+        "rating": "good",
+        "distribution": {
+          "good": 86.3,
+          "needsImprovement": 7.8,
+          "poor": 5.9
+        }
+      },
+      "fcp": {
+        "p75": 1017,
+        "rating": "good",
+        "distribution": {
+          "good": 88.5,
+          "needsImprovement": 6.1,
+          "poor": 5.5
+        }
+      },
+      "inp": {
+        "p75": 162,
+        "rating": "good",
+        "distribution": {
+          "good": 81.4,
+          "needsImprovement": 14.6,
+          "poor": 4
+        }
+      },
+      "lcp": {
+        "p75": 1109,
+        "rating": "good",
+        "distribution": {
+          "good": 92.1,
+          "needsImprovement": 3.9,
+          "poor": 4
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "probe": {
+      "metas": [],
+      "marks": [
+        "preact"
+      ],
+      "markVersions": {}
+    },
+    "interstitial": null,
+    "host": {
+      "id": "mythic-beasts",
+      "name": "Mythic Beasts",
+      "icon": "mythic",
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 4,
+    "passes": 410,
+    "incomplete": 40,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Heading levels should only increase by one",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/heading-order?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".normal",
+            "snippet": "<h5 class=\"normal\"> We are an independent provider of real-time information about train services across the Great British rail network. </h5>"
+          },
+          {
+            "selector": ".medium-3.large-auto.small-6:nth-child(1) > h5",
+            "snippet": "<h5><a href=\"/search/\">View The Trains</a></h5>"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".top-bar-title",
+            "snippet": "<div class=\"top-bar-title\"> <div class=\"logo-container\"> <a href=\"/\"><div class=\"logo\" aria-label=\"RTT Logo\"></div></a> </div> </div>"
+          },
+          {
+            "selector": "#title-bar-title",
+            "snippet": "<div class=\"title-bar-title\" id=\"title-bar-title\">Menu</div>"
+          }
+        ]
+      }
+    ],
+    "error": null
+  },
+  "render": {
+    "samples": [
+      {
+        "hash": "67802c750d43",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "etag": "W/\"6ae10928-5fff\"",
+          "last-modified": "Tue, 27 Oct 2026 20:27:20 GMT"
+        }
+      },
+      {
+        "hash": "67802c750d43",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "etag": "W/\"6ae10928-5fff\"",
+          "last-modified": "Tue, 27 Oct 2026 20:27:20 GMT"
+        }
+      },
+      {
+        "hash": "67802c750d43",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "etag": "W/\"6ae10928-5fff\"",
+          "last-modified": "Tue, 27 Oct 2026 20:27:20 GMT"
+        }
+      },
+      {
+        "hash": "67802c750d43",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "etag": "W/\"6ae10928-5fff\"",
+          "last-modified": "Tue, 27 Oct 2026 20:27:20 GMT"
+        }
+      },
+      {
+        "hash": "67802c750d43",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "etag": "\"6ae10928-5fff\"",
+          "last-modified": "Tue, 27 Oct 2026 20:27:20 GMT"
+        }
+      }
+    ]
+  },
+  "consecutiveFailures": 0
+}

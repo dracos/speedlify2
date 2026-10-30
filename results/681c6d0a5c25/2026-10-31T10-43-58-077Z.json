@@ -1,0 +1,423 @@
+{
+  "url": "https://www.nationalrail.co.uk/journey-planner?adults=1&destination=MAN&extraTime=0&leavingDate=141126&leavingHour=10&leavingMin=00&leavingType=departing&origin=BTN&type=single",
+  "name": "National Rail JP",
+  "group": "nationalrail",
+  "groupName": "National Rail",
+  "timestamp": 1793443438077,
+  "date": "2026-10-31T10:43:58.077Z",
+  "runId": "2026-10-31T10-42-34-255Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 79909,
+  "error": null,
+  "variance": {
+    "min": 48,
+    "max": 49,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.nationalrail.co.uk/journey-planner?adults=1&destination=MAN&extraTime=0&leavingDate=141126&leavingHour=10&leavingMin=00&leavingType=departing&origin=BTN&type=single",
+    "finalUrl": "https://www.nationalrail.co.uk/journey-planner/?adults=1&destination=MAN&extraTime=0&leavingDate=141126&leavingHour=10&leavingMin=00&leavingType=departing&origin=BTN&type=single",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 49,
+      "accessibility": 100,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 96
+    },
+    "timings": {
+      "fcp": 1844,
+      "lcp": 17865,
+      "si": 5968,
+      "tbt": 744,
+      "tti": 17865,
+      "cls": 0.088,
+      "ttfb": 475,
+      "maxPotentialFid": 362,
+      "serverResponseTime": 20,
+      "networkRtt": 1.8,
+      "networkServerLatency": 52.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 62.9,
+      "elementRenderDelay": 721.3
+    },
+    "weight": {
+      "total": 2840896,
+      "requests": 94,
+      "mainDocument": 38342,
+      "byType": {
+        "total": {
+          "bytes": 2837819,
+          "requests": 92
+        },
+        "script": {
+          "bytes": 2013430,
+          "requests": 47
+        },
+        "font": {
+          "bytes": 452708,
+          "requests": 7
+        },
+        "other": {
+          "bytes": 292834,
+          "requests": 30
+        },
+        "document": {
+          "bytes": 38342,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 25546,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 14959,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 1408788,
+          "requests": 31
+        }
+      },
+      "scripts": 48,
+      "stylesheets": 1,
+      "fonts": 7
+    },
+    "thirdParty": {
+      "count": 8,
+      "bytes": 1408788,
+      "mainThreadMs": 187.6,
+      "top": [
+        {
+          "entity": "Optanon",
+          "bytes": 347154,
+          "mainThreadMs": 23.3,
+          "byType": {
+            "script": 182442,
+            "other": 157122,
+            "image": 7590
+          },
+          "typedBytes": 347154
+        },
+        {
+          "entity": "Google/Doubleclick Ads",
+          "bytes": 283373,
+          "mainThreadMs": 26.6,
+          "byType": {
+            "script": 258540,
+            "other": 24833
+          },
+          "typedBytes": 283373
+        },
+        {
+          "entity": "intergient.com",
+          "bytes": 250512,
+          "mainThreadMs": 27.2,
+          "byType": {
+            "script": 250512
+          },
+          "typedBytes": 250512
+        },
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 198345,
+          "mainThreadMs": 38.7,
+          "byType": {
+            "script": 198345
+          },
+          "typedBytes": 198345
+        },
+        {
+          "entity": "confiant-integrations.net",
+          "bytes": 169303,
+          "mainThreadMs": 44.6,
+          "byType": {
+            "script": 169303
+          },
+          "typedBytes": 169303
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 3678.8,
+      "byGroup": {
+        "scriptEvaluation": 1838.9,
+        "other": 666,
+        "scriptParseCompile": 477.6,
+        "paintCompositeRender": 359.3,
+        "styleLayout": 259.9,
+        "garbageCollection": 45.9,
+        "parseHTML": 31.3
+      },
+      "bootupMs": 2066.1,
+      "longTasks": 11,
+      "longestTaskMs": 362
+    },
+    "dom": {
+      "elements": 1131,
+      "depth": 29,
+      "maxChildren": 26
+    },
+    "waste": {
+      "unusedJsBytes": 992066,
+      "unusedCssBytes": 12551,
+      "legacyJsBytes": 32288,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 2186,
+      "renderBlockingMs": 320,
+      "renderBlockingCount": 1,
+      "poorlyCachedBytes": 126806.94791666666,
+      "poorlyCachedCount": 7
+    },
+    "accessibility": {
+      "failingCount": 0,
+      "applicableCount": 30,
+      "failingNodes": 0,
+      "failing": []
+    },
+    "bestPractices": {
+      "failingCount": 4,
+      "applicableCount": 19,
+      "failing": [
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "weight": 5,
+          "nodes": 1
+        },
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "weight": 1,
+          "nodes": 1
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "weight": 1,
+          "nodes": 2
+        },
+        {
+          "id": "valid-source-maps",
+          "title": "Missing source maps for large first-party JavaScript",
+          "weight": 0,
+          "nodes": 1
+        }
+      ]
+    },
+    "seo": {
+      "failingCount": 0,
+      "applicableCount": 9,
+      "failing": []
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 775,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 46
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3251,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-31T10:44:11.253Z",
+      "runtimeMs": 11775.9
+    }
+  },
+  "throttledLcpBreakdown": {
+    "timeToFirstByte": 1695.8,
+    "elementRenderDelay": 17460.3
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-10-02",
+      "last": "2026-10-29"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 1521,
+        "rating": "good",
+        "distribution": {
+          "good": 80.9,
+          "needsImprovement": 10.5,
+          "poor": 8.6
+        }
+      },
+      "inp": {
+        "p75": 540,
+        "rating": "poor",
+        "distribution": {
+          "good": 33.5,
+          "needsImprovement": 38.8,
+          "poor": 27.8
+        }
+      },
+      "lcp": {
+        "p75": 2321,
+        "rating": "good",
+        "distribution": {
+          "good": 77.1,
+          "needsImprovement": 11,
+          "poor": 11.9
+        }
+      },
+      "rtt": {
+        "p75": 121,
+        "rating": null,
+        "distribution": {
+          "good": 53.8,
+          "needsImprovement": 35.1,
+          "poor": 11.1
+        }
+      },
+      "cls": {
+        "p75": 0.18,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 50.8,
+          "needsImprovement": 30.3,
+          "poor": 18.9
+        }
+      },
+      "ttfb": {
+        "p75": 955,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 68.9,
+          "needsImprovement": 21.4,
+          "poor": 9.8
+        }
+      }
+    },
+    "cwvPass": false,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": {
+      "id": "nextjs",
+      "name": "Next.js",
+      "icon": "Nextdotjs",
+      "version": null,
+      "source": "dom",
+      "raw": null
+    },
+    "probe": {
+      "metas": [],
+      "marks": [
+        "next",
+        "react"
+      ],
+      "markVersions": {}
+    },
+    "interstitial": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a53210bc9fd5b111-MAN",
+      "server": "cloudflare"
+    },
+    "violations": 1,
+    "passes": 2014,
+    "incomplete": 18,
+    "violationRules": 1,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "#onetrust-consent-sdk",
+            "snippet": "<div id=\"onetrust-consent-sdk\" data-nosnippet=\"true\">"
+          }
+        ]
+      }
+    ],
+    "error": null
+  },
+  "render": {
+    "samples": [
+      {
+        "hash": "e0bc72836e9c",
+        "nonce": null,
+        "stamp": null,
+        "marks": [
+          "next-gssp"
+        ],
+        "headers": {
+          "age": "45",
+          "cf-cache-status": "HIT"
+        }
+      },
+      {
+        "hash": "e0bc72836e9c",
+        "nonce": null,
+        "stamp": null,
+        "marks": [
+          "next-gssp"
+        ],
+        "headers": {
+          "age": "57",
+          "cf-cache-status": "HIT"
+        }
+      },
+      {
+        "hash": "e0bc72836e9c",
+        "nonce": null,
+        "stamp": null,
+        "marks": [
+          "next-gssp"
+        ],
+        "headers": {
+          "age": "69",
+          "cf-cache-status": "HIT"
+        }
+      },
+      {
+        "hash": "e0bc72836e9c",
+        "nonce": null,
+        "stamp": null,
+        "marks": [
+          "next-gssp"
+        ],
+        "headers": {
+          "age": "82",
+          "cf-cache-status": "HIT"
+        }
+      }
+    ]
+  },
+  "consecutiveFailures": 0
+}

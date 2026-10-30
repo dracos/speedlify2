@@ -1,0 +1,3 @@
+{"version":1,"url":"https://traintimes.org.uk/live/btn","updated":"2026-10-31T11:42:05.190Z","points":[
+{"t":1793446886216,"performance":100,"accessibility":100,"best-practices":100,"seo":100,"lcp":839,"cls":0,"tbt":0,"fcp":839,"si":1546,"ttfb":762,"total":17211,"requests":8,"bytes":0,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":262.1,"longTasks":1,"elements":251,"failingCount":0,"failingNodes":0,"axeViolations":0,"axePasses":459,"field-lcp":1407,"field-inp":89,"field-cls":0,"field-fcp":1334,"field-ttfb":1166,"bench":3263,"runs":3,"reqRuns":3,"ms":38928,"spread":0}
+]}
