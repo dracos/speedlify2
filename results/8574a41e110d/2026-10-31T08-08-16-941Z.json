@@ -313,7 +313,7 @@
     "generator": null,
     "probe": {
       "metas": [],
-      "marks": [],
+      "marks": ["jQuery"],
       "markVersions": {}
     },
     "interstitial": null,
