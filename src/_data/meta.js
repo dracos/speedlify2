@@ -36,7 +36,7 @@ export default {
 	// encoded site URL. Set to "" for a build that makes no external requests
 	// at all — which is arguably the right default for a tool that measures
 	// third-party weight for a living.
-	avatarService: "https://v1.indieweb-avatar.11ty.dev/{url}/",
+	avatarService: "/icons/{url}.png",
 
 	// Screenshot service for the individual site pages. Same substitution, same
 	// switch: "" turns it off. `medium` is 650px wide at the service's default

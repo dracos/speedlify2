@@ -293,6 +293,7 @@ export default async function ($config) {
 
 	$config.addPassthroughCopy({ "src/css": "css" });
 	$config.addPassthroughCopy({ "src/js": "js" });
+	$config.addPassthroughCopy({ "src/icons": "icons" });
 	/*
 	 * The embed component, which lives in packages/ because it is published to
 	 * npm as `speedlify2-score` rather than only served from here. Copied to the
@@ -1029,7 +1030,8 @@ export default async function ($config) {
 	 */
 	function imageService(url, service) {
 		if (!service) return "";
-		return service.replace("{url}", encodeURIComponent(url));
+        url = url.replace('https://', '').replace(/[/:?=&]/g, '');
+		return service.replace("{url}", url);
 	}
 
 	$config.addFilter("avatar", imageService);
