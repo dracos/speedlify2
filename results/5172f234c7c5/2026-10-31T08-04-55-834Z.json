@@ -271,9 +271,9 @@
     },
     "interstitial": null,
     "host": {
-      "id": "self-hosted",
-      "name": "Self-hosted",
-      "icon": null,
+      "id": "mythic-beasts",
+      "name": "Mythic Beasts",
+      "icon": "mythic",
       "detail": "gunicorn",
       "detailIcon": "Gunicorn",
       "source": "server"
