@@ -1,0 +1,536 @@
+{
+  "url": "https://www.theyworkforyou.com/",
+  "name": "TheyWorkForYou",
+  "group": "work",
+  "groupName": "mySociety",
+  "timestamp": 1793434011961,
+  "date": "2026-10-31T08:06:51.961Z",
+  "runId": "2026-10-31T08-00-37-498Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 41898,
+  "error": null,
+  "variance": {
+    "min": 88,
+    "max": 93,
+    "spread": 5,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.theyworkforyou.com/",
+    "finalUrl": "https://www.theyworkforyou.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 91,
+      "accessibility": 84,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 2008,
+      "lcp": 3313,
+      "si": 2008,
+      "tbt": 2,
+      "tti": 4724,
+      "cls": 0.006,
+      "ttfb": 619,
+      "maxPotentialFid": 53,
+      "serverResponseTime": 20,
+      "networkRtt": 0,
+      "networkServerLatency": 38.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 20.6,
+      "resourceLoadDelay": 102.5,
+      "resourceLoadDuration": 19,
+      "elementRenderDelay": 21.9
+    },
+    "weight": {
+      "total": 524668,
+      "requests": 24,
+      "mainDocument": 20192,
+      "byType": {
+        "total": {
+          "bytes": 523059,
+          "requests": 23
+        },
+        "script": {
+          "bytes": 227232,
+          "requests": 6
+        },
+        "font": {
+          "bytes": 188396,
+          "requests": 6
+        },
+        "image": {
+          "bytes": 52194,
+          "requests": 6
+        },
+        "stylesheet": {
+          "bytes": 34988,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 20192,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 57,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 333624,
+          "requests": 9
+        }
+      },
+      "scripts": 6,
+      "stylesheets": 3,
+      "fonts": 6
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 333624,
+      "mainThreadMs": 29.7,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 175580,
+          "mainThreadMs": 29.7,
+          "byType": {
+            "script": 175580
+          },
+          "typedBytes": 175580
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 157987,
+          "mainThreadMs": 0,
+          "byType": {
+            "font": 156131,
+            "stylesheet": 1856
+          },
+          "typedBytes": 157987
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 57,
+          "mainThreadMs": 0,
+          "byType": {
+            "other": 57
+          },
+          "typedBytes": 57
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 476.7,
+      "byGroup": {
+        "scriptEvaluation": 140,
+        "other": 119,
+        "styleLayout": 111.1,
+        "scriptParseCompile": 52.5,
+        "paintCompositeRender": 22.9,
+        "parseHTML": 20,
+        "garbageCollection": 11.3
+      },
+      "bootupMs": 147.9,
+      "longTasks": 1,
+      "longestTaskMs": 53
+    },
+    "dom": {
+      "elements": 2010,
+      "depth": 14,
+      "maxChildren": 76
+    },
+    "waste": {
+      "unusedJsBytes": 95952,
+      "unusedCssBytes": 29541,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 2052,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1089,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 136111,
+      "poorlyCachedCount": 12
+    },
+    "accessibility": {
+      "failingCount": 5,
+      "applicableCount": 28,
+      "failingNodes": 16,
+      "failing": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "weight": 7,
+          "nodes": 5
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "weight": 7,
+          "nodes": 4
+        },
+        {
+          "id": "listitem",
+          "title": "List items (`<li>`) are not contained within `<ul>`, `<ol>` or `<menu>` parent elements.",
+          "weight": 7,
+          "nodes": 4
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "weight": 7,
+          "nodes": 2
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "weight": 3,
+          "nodes": 1
+        }
+      ]
+    },
+    "bestPractices": {
+      "failingCount": 1,
+      "applicableCount": 20,
+      "failing": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "weight": 1,
+          "nodes": 1
+        }
+      ]
+    },
+    "seo": {
+      "failingCount": 1,
+      "applicableCount": 9,
+      "failing": [
+        {
+          "id": "robots-txt",
+          "title": "robots.txt is not valid",
+          "weight": 1,
+          "nodes": null
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 13
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3238,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-31T08:07:06.905Z",
+      "runtimeMs": 6026.8
+    }
+  },
+  "throttledLcpBreakdown": {
+    "timeToFirstByte": 1125.9,
+    "resourceLoadDelay": 943.6,
+    "resourceLoadDuration": 1385.5,
+    "elementRenderDelay": 6.1
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-10-02",
+      "last": "2026-10-29"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 1903,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 71.4,
+          "needsImprovement": 23,
+          "poor": 5.7
+        }
+      },
+      "inp": {
+        "p75": 127,
+        "rating": "good",
+        "distribution": {
+          "good": 93,
+          "needsImprovement": 6.5,
+          "poor": 0.5
+        }
+      },
+      "lcp": {
+        "p75": 2005,
+        "rating": "good",
+        "distribution": {
+          "good": 86.6,
+          "needsImprovement": 9.6,
+          "poor": 3.8
+        }
+      },
+      "rtt": {
+        "p75": 93,
+        "rating": null,
+        "distribution": {
+          "good": 64.5,
+          "needsImprovement": 31.4,
+          "poor": 4.2
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 99.9,
+          "needsImprovement": 0.1,
+          "poor": 0
+        }
+      },
+      "ttfb": {
+        "p75": 1621,
+        "rating": "needs-improvement",
+        "distribution": {
+          "good": 50.4,
+          "needsImprovement": 33.6,
+          "poor": 16
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "probe": {
+      "metas": [],
+      "marks": [],
+      "markVersions": {}
+    },
+    "interstitial": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 25,
+    "passes": 861,
+    "incomplete": 33,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 10,
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".full-page__row:nth-child(1) > .nested-row.row:nth-child(1)",
+            "snippet": "<div class=\"row nested-row\">"
+          },
+          {
+            "selector": ".medium-9",
+            "snippet": "<div class=\"medium-9 columns\"> <input name=\"q\" id=\"q\" class=\"homepage-search__input\" type=\"text\" placeholder=\"Enter your postcode, person, or topic\"> </div>"
+          },
+          {
+            "selector": ".full-page__row:nth-child(1) > div:nth-child(4)",
+            "snippet": "<div>"
+          },
+          {
+            "selector": ".full-page__row:nth-child(2)",
+            "snippet": "<div class=\"full-page__row\">"
+          },
+          {
+            "selector": ".homepage-parl-list > h2",
+            "snippet": "<h2>The UK's Parliaments and Assemblies</h2>"
+          }
+        ]
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 5,
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "a[href=\"/mp/?p=26510\"]",
+            "snippet": "<a href=\"/mp/?p=26510\">Catherine Fookes</a>"
+          },
+          {
+            "selector": "a[href=\"/mp/?p=25475\"]",
+            "snippet": "<a href=\"/mp/?p=25475\">Jim McMahon</a>"
+          },
+          {
+            "selector": "a[href=\"/mp/?p=13864\"]",
+            "snippet": "<a href=\"/mp/?p=13864\">Jim Shannon</a>"
+          },
+          {
+            "selector": ".excerpt__statement > a[href=\"/mp/?p=10766\"]",
+            "snippet": "<a href=\"/mp/?p=10766\">Andy Burnham</a>"
+          },
+          {
+            "selector": "a[href=\"/mp/?p=11199\"]",
+            "snippet": "<a href=\"/mp/?p=11199\">Andrew Rosindell</a>"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/list?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".homepage-parl-nav",
+            "snippet": "<ul class=\"homepage-parl-nav\">"
+          },
+          {
+            "selector": ".mysoc-footer__links > ul:nth-child(1)",
+            "snippet": "<ul>"
+          },
+          {
+            "selector": ".mysoc-footer__links > ul:nth-child(2)",
+            "snippet": "<ul>"
+          },
+          {
+            "selector": ".mysoc-footer__badges",
+            "snippet": "<ul class=\"mysoc-footer__badges\"> <li role=\"presentation\"><a href=\"https://github.com/mysociety/theyworkforyou\" class=\"mysoc-footer__badge mysoc-footer__badge--github\">Github</a></li> </ul>"
+          }
+        ]
+      },
+      {
+        "id": "listitem",
+        "impact": "serious",
+        "nodes": 4,
+        "help": "<li> elements must be contained in a <ul> or <ol>",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/listitem?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".homepage-parl-column:nth-child(1) > .top-level-parl",
+            "snippet": "<li class=\"top-level-parl\">"
+          },
+          {
+            "selector": ".homepage-parl-column:nth-child(2) > .top-level-parl",
+            "snippet": "<li class=\"top-level-parl\">"
+          },
+          {
+            "selector": ".homepage-parl-column:nth-child(3) > .top-level-parl",
+            "snippet": "<li class=\"top-level-parl\">"
+          },
+          {
+            "selector": ".homepage-parl-column:nth-child(4) > .top-level-parl",
+            "snippet": "<li class=\"top-level-parl\">"
+          }
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "html",
+            "snippet": "<html lang=\"en\" class=\"js\">"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".homepage-parl-list > nav",
+            "snippet": "<nav>"
+          }
+        ]
+      }
+    ],
+    "error": null
+  },
+  "render": {
+    "samples": [
+      {
+        "hash": "cf4d3e87d2a8",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "0"
+        }
+      },
+      {
+        "hash": "cf4d3e87d2a8",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "6"
+        }
+      },
+      {
+        "hash": "568a5444ce13",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "4"
+        }
+      },
+      {
+        "hash": "568a5444ce13",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "11"
+        }
+      },
+      {
+        "hash": "de52c6126b2f",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "17"
+        }
+      }
+    ]
+  },
+  "consecutiveFailures": 0
+}

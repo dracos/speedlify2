@@ -1,0 +1,469 @@
+{
+  "url": "https://postboxes.dracos.co.uk/",
+  "name": "Find your nearest postbox",
+  "group": "mine",
+  "groupName": "My sites",
+  "timestamp": 1793433711550,
+  "date": "2026-10-31T08:01:51.550Z",
+  "runId": "2026-10-31T08-00-37-498Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 62817,
+  "error": null,
+  "variance": {
+    "min": 88,
+    "max": 96,
+    "spread": 8,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://postboxes.dracos.co.uk/",
+    "finalUrl": "https://postboxes.dracos.co.uk/#15/52.4956/-1.9073",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 95,
+      "accessibility": 92,
+      "best-practices": 85,
+      "seo": 92,
+      "agentic-browsing": 50
+    },
+    "timings": {
+      "fcp": 786,
+      "lcp": 2899,
+      "si": 786,
+      "tbt": 0,
+      "tti": 2899,
+      "cls": 0,
+      "ttfb": 622,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 16,
+      "networkRtt": 0,
+      "networkServerLatency": 26.8
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 16.7,
+      "resourceLoadDelay": 70.6,
+      "resourceLoadDuration": 25.2,
+      "elementRenderDelay": 8.3
+    },
+    "weight": {
+      "total": 456439,
+      "requests": 25,
+      "mainDocument": 957,
+      "byType": {
+        "total": {
+          "bytes": 456221,
+          "requests": 24
+        },
+        "image": {
+          "bytes": 407251,
+          "requests": 15
+        },
+        "script": {
+          "bytes": 43409,
+          "requests": 4
+        },
+        "stylesheet": {
+          "bytes": 3720,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 957,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 884,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 400574,
+          "requests": 12
+        }
+      },
+      "scripts": 4,
+      "stylesheets": 3,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 400574,
+      "mainThreadMs": 0,
+      "top": [
+        {
+          "entity": "openstreetmap.org",
+          "bytes": 400574,
+          "mainThreadMs": 0,
+          "byType": {
+            "image": 400574
+          },
+          "typedBytes": 400574
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 228.4,
+      "byGroup": {
+        "other": 91.1,
+        "scriptEvaluation": 67.9,
+        "styleLayout": 42.7,
+        "scriptParseCompile": 15.1,
+        "paintCompositeRender": 7.7,
+        "parseHTML": 4
+      },
+      "bootupMs": 33.3,
+      "longTasks": 0,
+      "longestTaskMs": null
+    },
+    "dom": {
+      "elements": 84,
+      "depth": 7,
+      "maxChildren": 17
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 3,
+      "poorlyCachedBytes": 319108.5400777778,
+      "poorlyCachedCount": 22
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 25,
+      "failingNodes": 16,
+      "failing": [
+        {
+          "id": "presentation-role-conflict",
+          "title": "Elements with `role=\"none\"` or `role=\"presentation\"` have conflicts",
+          "weight": 1,
+          "nodes": 14
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "weight": 10,
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "weight": 3,
+          "nodes": 1
+        }
+      ]
+    },
+    "bestPractices": {
+      "failingCount": 4,
+      "applicableCount": 19,
+      "failing": [
+        {
+          "id": "geolocation-on-start",
+          "title": "Requests the geolocation permission on page load",
+          "weight": 1,
+          "nodes": 1
+        },
+        {
+          "id": "image-size-responsive",
+          "title": "Serves images with low resolution",
+          "weight": 1,
+          "nodes": 13
+        },
+        {
+          "id": "charset",
+          "title": "Charset declaration is missing or occurs too late in the HTML",
+          "weight": 1,
+          "nodes": null
+        },
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "weight": 1,
+          "nodes": 1
+        }
+      ]
+    },
+    "seo": {
+      "failingCount": 1,
+      "applicableCount": 9,
+      "failing": [
+        {
+          "id": "meta-description",
+          "title": "Document does not have a meta description",
+          "weight": 1,
+          "nodes": null
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 1,
+      "baselineLimitedFeatures": 7
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3262.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-31T08:01:58.543Z",
+      "runtimeMs": 5656.2
+    }
+  },
+  "throttledLcpBreakdown": {
+    "timeToFirstByte": 1125.9,
+    "resourceLoadDelay": 352.9,
+    "resourceLoadDuration": 2540.5,
+    "elementRenderDelay": 15.9
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-10-02",
+      "last": "2026-10-29"
+    },
+    "metrics": {
+      "ttfb": {
+        "p75": 654,
+        "rating": "good",
+        "distribution": {
+          "good": 82.2,
+          "needsImprovement": 14.1,
+          "poor": 3.7
+        }
+      },
+      "fcp": {
+        "p75": 1334,
+        "rating": "good",
+        "distribution": {
+          "good": 82.3,
+          "needsImprovement": 6.2,
+          "poor": 11.5
+        }
+      },
+      "lcp": {
+        "p75": 1562,
+        "rating": "good",
+        "distribution": {
+          "good": 85.1,
+          "needsImprovement": 7.1,
+          "poor": 7.8
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 100,
+          "needsImprovement": 0,
+          "poor": 0
+        },
+        "scope": "origin"
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2,
+    "borrowedFromOrigin": [
+      "cls"
+    ]
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "probe": {
+      "metas": [],
+      "marks": [],
+      "markVersions": {}
+    },
+    "interstitial": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 20,
+    "passes": 337,
+    "incomplete": 13,
+    "violationRules": 5,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "presentation-role-conflict",
+        "impact": "minor",
+        "nodes": 14,
+        "help": "Elements marked as presentational should be consistently ignored",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/presentation-role-conflict?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".leaflet-marker-icon.leaflet-interactive.leaflet-zoom-animated:nth-child(1)",
+            "snippet": "<img src=\"https://postboxes.dr...\" class=\"leaflet-marker-icon ...\" alt=\"\" tabindex=\"0\" style=\"margin-left: -12px; ...\">"
+          },
+          {
+            "selector": ".leaflet-marker-icon.leaflet-interactive.leaflet-zoom-animated:nth-child(2)",
+            "snippet": "<img src=\"https://postboxes.dr...\" class=\"leaflet-marker-icon ...\" alt=\"\" tabindex=\"0\" style=\"margin-left: -12px; ...\">"
+          },
+          {
+            "selector": ".leaflet-marker-icon.leaflet-interactive.leaflet-zoom-animated:nth-child(3)",
+            "snippet": "<img src=\"https://postboxes.dr...\" class=\"leaflet-marker-icon ...\" alt=\"\" tabindex=\"0\" style=\"margin-left: -12px; ...\">"
+          },
+          {
+            "selector": ".leaflet-marker-icon.leaflet-interactive.leaflet-zoom-animated:nth-child(4)",
+            "snippet": "<img src=\"https://postboxes.dr...\" class=\"leaflet-marker-icon ...\" alt=\"\" tabindex=\"0\" style=\"margin-left: -12px; ...\">"
+          },
+          {
+            "selector": ".leaflet-marker-icon.leaflet-interactive.leaflet-zoom-animated:nth-child(5)",
+            "snippet": "<img src=\"https://postboxes.dr...\" class=\"leaflet-marker-icon ...\" alt=\"\" tabindex=\"0\" style=\"margin-left: -12px; ...\">"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 3,
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".leaflet-map-pane",
+            "snippet": "<div class=\"leaflet-pane leaflet-map-pane\" style=\"transform: translate3d(0px, 0px, 0px);\">"
+          },
+          {
+            "selector": ".leaflet-bottom.leaflet-right",
+            "snippet": "<div class=\"leaflet-bottom leaflet-right\">"
+          },
+          {
+            "selector": "#filter",
+            "snippet": "<form id=\"filter\" method=\"get\" action=\"nearest.php\"> <label for=\"q\">Postcode:</label> <input type=\"text\" name=\"q\" id=\"q\"> </form>"
+          }
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "html",
+            "snippet": "<html lang=\"en-gb\" class=\"js\">"
+          }
+        ]
+      },
+      {
+        "id": "meta-viewport",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Zooming and scaling must not be disabled",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-viewport?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "meta[name=\"viewport\"]",
+            "snippet": "<meta name=\"viewport\" content=\"initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+          }
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "html",
+            "snippet": "<html lang=\"en-gb\" class=\"js\">"
+          }
+        ]
+      }
+    ],
+    "error": null
+  },
+  "render": {
+    "samples": [
+      {
+        "hash": "a912bc805a45",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "etag": "W/\"6ac21546-89a\"",
+          "last-modified": "Sun, 04 Oct 2026 08:58:46 GMT"
+        }
+      },
+      {
+        "hash": "a912bc805a45",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "etag": "W/\"6ac21546-89a\"",
+          "last-modified": "Sun, 04 Oct 2026 08:58:46 GMT"
+        }
+      },
+      {
+        "hash": "a912bc805a45",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "etag": "W/\"6ac21546-89a\"",
+          "last-modified": "Sun, 04 Oct 2026 08:58:46 GMT"
+        }
+      },
+      {
+        "hash": "a912bc805a45",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "etag": "W/\"6ac21546-89a\"",
+          "last-modified": "Sun, 04 Oct 2026 08:58:46 GMT"
+        }
+      },
+      {
+        "hash": "a912bc805a45",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "etag": "W/\"6ac21546-89a\"",
+          "last-modified": "Sun, 04 Oct 2026 08:58:46 GMT"
+        },
+        "fromCache": true
+      }
+    ]
+  },
+  "consecutiveFailures": 0
+}

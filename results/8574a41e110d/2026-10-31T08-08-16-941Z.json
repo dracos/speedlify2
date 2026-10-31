@@ -1,0 +1,477 @@
+{
+  "url": "https://www.writetothem.com/",
+  "name": "WriteToThem",
+  "group": "work",
+  "groupName": "mySociety",
+  "timestamp": 1793434096941,
+  "date": "2026-10-31T08:08:16.941Z",
+  "runId": "2026-10-31T08-00-37-498Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 39726,
+  "error": null,
+  "variance": {
+    "min": 85,
+    "max": 98,
+    "spread": 13,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.writetothem.com/",
+    "finalUrl": "https://www.writetothem.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 92,
+      "accessibility": 90,
+      "best-practices": 100,
+      "seo": 83,
+      "agentic-browsing": 67
+    },
+    "timings": {
+      "fcp": 1696,
+      "lcp": 3286,
+      "si": 1696,
+      "tbt": 4,
+      "tti": 4174,
+      "cls": 0.019,
+      "ttfb": 620,
+      "maxPotentialFid": 58,
+      "serverResponseTime": 22,
+      "networkRtt": 0,
+      "networkServerLatency": 31.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 22.9,
+      "resourceLoadDelay": 54.6,
+      "resourceLoadDuration": 20.2,
+      "elementRenderDelay": 29.2
+    },
+    "weight": {
+      "total": 464190,
+      "requests": 29,
+      "mainDocument": 12515,
+      "byType": {
+        "total": {
+          "bytes": 457471,
+          "requests": 28
+        },
+        "script": {
+          "bytes": 235293,
+          "requests": 8
+        },
+        "font": {
+          "bytes": 127285,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 64735,
+          "requests": 11
+        },
+        "stylesheet": {
+          "bytes": 16522,
+          "requests": 3
+        },
+        "document": {
+          "bytes": 12515,
+          "requests": 1
+        },
+        "other": {
+          "bytes": 1121,
+          "requests": 2
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 315344,
+          "requests": 7
+        }
+      },
+      "scripts": 8,
+      "stylesheets": 3,
+      "fonts": 3
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 315344,
+      "mainThreadMs": 30.2,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 166115,
+          "mainThreadMs": 26.4,
+          "byType": {
+            "script": 166115
+          },
+          "typedBytes": 166115
+        },
+        {
+          "entity": "Google Fonts",
+          "bytes": 128297,
+          "mainThreadMs": 0,
+          "byType": {
+            "font": 127285,
+            "stylesheet": 1012
+          },
+          "typedBytes": 128297
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 20932,
+          "mainThreadMs": 3.8,
+          "byType": {
+            "script": 20875,
+            "other": 57
+          },
+          "typedBytes": 20932
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 431.5,
+      "byGroup": {
+        "other": 145.3,
+        "scriptEvaluation": 128.9,
+        "styleLayout": 75.3,
+        "scriptParseCompile": 49.3,
+        "paintCompositeRender": 17,
+        "parseHTML": 9.9,
+        "garbageCollection": 5.8
+      },
+      "bootupMs": 130.2,
+      "longTasks": 1,
+      "longestTaskMs": 58
+    },
+    "dom": {
+      "elements": 132,
+      "depth": 12,
+      "maxChildren": 13
+    },
+    "waste": {
+      "unusedJsBytes": 93253,
+      "unusedCssBytes": 11092,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 926,
+      "renderBlockingCount": 4,
+      "poorlyCachedBytes": 144204.25,
+      "poorlyCachedCount": 20
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 27,
+      "failingNodes": 5,
+      "failing": [
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "weight": 7,
+          "nodes": 3
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "weight": 10,
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "weight": 3,
+          "nodes": 1
+        }
+      ]
+    },
+    "bestPractices": {
+      "failingCount": 0,
+      "applicableCount": 20,
+      "failing": []
+    },
+    "seo": {
+      "failingCount": 2,
+      "applicableCount": 9,
+      "failing": [
+        {
+          "id": "meta-description",
+          "title": "Document does not have a meta description",
+          "weight": 1,
+          "nodes": null
+        },
+        {
+          "id": "robots-txt",
+          "title": "robots.txt is not valid",
+          "weight": 1,
+          "nodes": null
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 10
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3256.5,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-31T08:08:30.130Z",
+      "runtimeMs": 5748.7
+    }
+  },
+  "throttledLcpBreakdown": {
+    "timeToFirstByte": 1125.9,
+    "resourceLoadDelay": 774.8,
+    "resourceLoadDuration": 1473.9,
+    "elementRenderDelay": 17
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-10-02",
+      "last": "2026-10-29"
+    },
+    "metrics": {
+      "fcp": {
+        "p75": 871,
+        "rating": "good",
+        "distribution": {
+          "good": 94.1,
+          "needsImprovement": 4,
+          "poor": 1.9
+        }
+      },
+      "inp": {
+        "p75": 128,
+        "rating": "good",
+        "distribution": {
+          "good": 88.9,
+          "needsImprovement": 8.8,
+          "poor": 2.4
+        }
+      },
+      "lcp": {
+        "p75": 985,
+        "rating": "good",
+        "distribution": {
+          "good": 96.4,
+          "needsImprovement": 2.2,
+          "poor": 1.4
+        }
+      },
+      "rtt": {
+        "p75": 76,
+        "rating": null,
+        "distribution": {
+          "good": 73.6,
+          "needsImprovement": 23.7,
+          "poor": 2.7
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 99.9,
+          "needsImprovement": 0.1,
+          "poor": 0
+        }
+      },
+      "ttfb": {
+        "p75": 429,
+        "rating": "good",
+        "distribution": {
+          "good": 89.8,
+          "needsImprovement": 8.1,
+          "poor": 2.1
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "probe": {
+      "metas": [],
+      "marks": [],
+      "markVersions": {}
+    },
+    "interstitial": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 8,
+    "passes": 230,
+    "incomplete": 30,
+    "violationRules": 6,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 3,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/list?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "nav > ul:nth-child(1)",
+            "snippet": "<ul> <li role=\"presentation\"><a href=\"/about-qa\">Help</a></li> <li role=\"presentation\"><a href=\"/about-contact\">Contact Us</a></li> <li role=\"presentation\"><a href=\"/about-linktous\">Link To Us</a></l…"
+          },
+          {
+            "selector": "ul:nth-child(2)",
+            "snippet": "<ul> <li role=\"presentation\"><a href=\"/about-copyright\">Copyright</a></li> <li role=\"presentation\"><a href=\"/about-privacy\">Privacy</a></li> </ul>"
+          },
+          {
+            "selector": ".mysoc-footer__badges",
+            "snippet": "<ul class=\"mysoc-footer__badges\">"
+          }
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "html",
+            "snippet": "<html class=\" js touch svg inlinesvg svgclippaths no-ie8compat\" lang=\"en\">"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "div[role=\"navigation\"]",
+            "snippet": "<div class=\"large-10 large-centered columns\" role=\"navigation\">"
+          }
+        ]
+      },
+      {
+        "id": "meta-viewport",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Zooming and scaling must not be disabled",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-viewport?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "meta[name=\"viewport\"]",
+            "snippet": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+          }
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "html",
+            "snippet": "<html class=\" js touch svg inlinesvg svgclippaths no-ie8compat\" lang=\"en\">"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".hero",
+            "snippet": "<div class=\"row row-full-width hero\">"
+          }
+        ]
+      }
+    ],
+    "error": null
+  },
+  "render": {
+    "samples": [
+      {
+        "hash": "c87dee65fc94",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "3002"
+        }
+      },
+      {
+        "hash": "c87dee65fc94",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "3008"
+        }
+      },
+      {
+        "hash": "c87dee65fc94",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "3014"
+        }
+      },
+      {
+        "hash": "c87dee65fc94",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "3020"
+        }
+      },
+      {
+        "hash": "c87dee65fc94",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "3020"
+        },
+        "fromCache": true
+      }
+    ]
+  },
+  "consecutiveFailures": 0
+}

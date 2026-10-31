@@ -10,6 +10,30 @@ export default {
 	failureBackoff: true,
 	redirectConfirmations: 3,
 	groups: {
+        mine: {
+            name: "My sites",
+            enabled: true,
+            showOnHomePageCategoryList: true,
+            showHealth: true,
+            sites: [
+                { name: "dracos.co.uk", url: "https://dracos.co.uk/" },
+                { name: "Theatricalia", url: "https://theatricalia.com/" },
+                { name: "Find your nearest postbox", url: "https://postboxes.dracos.co.uk/" },
+                { name: "In Tune Mixtape Fan Club", url: "https://intunemixtapefanclub.dracos.co.uk/" },
+                { name: "Post Office Inquiry", url: "https://postofficeinquiry.dracos.co.uk/" },
+            ]
+        },
+        work: {
+            name: "mySociety",
+            enabled: true,
+            showOnHomePageCategoryList: true,
+            sites: [
+                { name: "FixMyStreet", url: "https://www.fixmystreet.com/" },
+                { name: "WhatDoTheyKnow", url: "https://www.whatdotheyknow.com/" },
+                { name: "TheyWorkForYou", url: "https://www.theyworkforyou.com/" },
+                { name: "WriteToThem", url: "https://www.writetothem.com/" },
+            ]
+        },
 		traintimes: {
 			name: "traintimes.org.uk",
 			enabled: true,
@@ -17,8 +41,9 @@ export default {
             showHealth: true,
 			sites: [
                 { name: "traintimes.org.uk front", url: "https://traintimes.org.uk/" },
-                { name: "traintimes.org.uk JP", url: "https://traintimes.org.uk/btn/man/1000/2026-11-14" },
+                { name: "traintimes.org.uk JP", url: "https://traintimes.org.uk/btn/man/1000/tomorrow" },
                 { name: "traintimes.org.uk LDB", url: "https://traintimes.org.uk/live/btn" },
+                { name: "split.traintimes.org.uk", url: "https://split.traintimes.org.uk/" },
 			],
 		},
 		other_train: {

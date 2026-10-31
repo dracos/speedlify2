@@ -1,0 +1,509 @@
+{
+  "url": "https://www.fixmystreet.com/",
+  "name": "FixMyStreet",
+  "group": "work",
+  "groupName": "mySociety",
+  "timestamp": 1793433973809,
+  "date": "2026-10-31T08:06:13.809Z",
+  "runId": "2026-10-31T08-00-37-498Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 38103,
+  "error": null,
+  "variance": {
+    "min": 93,
+    "max": 93,
+    "spread": 0,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://www.fixmystreet.com/",
+    "finalUrl": "https://www.fixmystreet.com/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 93,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 75,
+      "agentic-browsing": 24
+    },
+    "timings": {
+      "fcp": 1226,
+      "lcp": 1226,
+      "si": 1226,
+      "tbt": 8,
+      "tti": 3453,
+      "cls": 0.162,
+      "ttfb": 626,
+      "maxPotentialFid": 66,
+      "serverResponseTime": 23,
+      "networkRtt": 0,
+      "networkServerLatency": 50.3
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 23.3,
+      "elementRenderDelay": 36.9
+    },
+    "weight": {
+      "total": 454742,
+      "requests": 43,
+      "mainDocument": 18560,
+      "byType": {
+        "total": {
+          "bytes": 439305,
+          "requests": 41
+        },
+        "script": {
+          "bytes": 187088,
+          "requests": 10
+        },
+        "other": {
+          "bytes": 180338,
+          "requests": 20
+        },
+        "stylesheet": {
+          "bytes": 37152,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 18560,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 16167,
+          "requests": 8
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 166365,
+          "requests": 3
+        }
+      },
+      "scripts": 10,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 3,
+      "bytes": 166365,
+      "mainThreadMs": 27.4,
+      "top": [
+        {
+          "entity": "Google Tag Manager",
+          "bytes": 166117,
+          "mainThreadMs": 27.4,
+          "byType": {
+            "script": 166117
+          },
+          "typedBytes": 166117
+        },
+        {
+          "entity": "mysociety.org",
+          "bytes": 200,
+          "mainThreadMs": 0,
+          "byType": {
+            "other": 200
+          },
+          "typedBytes": 200
+        },
+        {
+          "entity": "Google Analytics",
+          "bytes": 48,
+          "mainThreadMs": 0,
+          "byType": {
+            "other": 48
+          },
+          "typedBytes": 48
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 404.4,
+      "byGroup": {
+        "other": 132.1,
+        "scriptEvaluation": 116.9,
+        "styleLayout": 68,
+        "scriptParseCompile": 43.8,
+        "parseHTML": 18.6,
+        "paintCompositeRender": 15.8,
+        "garbageCollection": 9.2
+      },
+      "bootupMs": 140.4,
+      "longTasks": 1,
+      "longestTaskMs": 66
+    },
+    "dom": {
+      "elements": 266,
+      "depth": 15,
+      "maxChildren": 26
+    },
+    "waste": {
+      "unusedJsBytes": 94891,
+      "unusedCssBytes": 26591,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 0,
+      "renderBlockingCount": 0,
+      "poorlyCachedBytes": 34069,
+      "poorlyCachedCount": 17
+    },
+    "accessibility": {
+      "failingCount": 3,
+      "applicableCount": 32,
+      "failingNodes": 4,
+      "failing": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "weight": 7,
+          "nodes": 2
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "title": "Elements use prohibited ARIA attributes",
+          "weight": 7,
+          "nodes": 1
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "weight": 7,
+          "nodes": 1
+        }
+      ]
+    },
+    "bestPractices": {
+      "failingCount": 1,
+      "applicableCount": 18,
+      "failing": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "weight": 1,
+          "nodes": 2
+        }
+      ]
+    },
+    "seo": {
+      "failingCount": 3,
+      "applicableCount": 9,
+      "failing": [
+        {
+          "id": "meta-description",
+          "title": "Document does not have a meta description",
+          "weight": 1,
+          "nodes": null
+        },
+        {
+          "id": "link-text",
+          "title": "Links do not have descriptive text",
+          "weight": 1,
+          "nodes": 3
+        },
+        {
+          "id": "robots-txt",
+          "title": "robots.txt is not valid",
+          "weight": 1,
+          "nodes": null
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": null,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 2,
+      "baselineLimitedFeatures": 12
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3261,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-31T08:06:20.973Z",
+      "runtimeMs": 5765.7
+    }
+  },
+  "throttledLcpBreakdown": {
+    "timeToFirstByte": 669.5,
+    "elementRenderDelay": 0
+  },
+  "field": {
+    "source": "crux",
+    "scope": "url",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-10-02",
+      "last": "2026-10-29"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 95,
+        "rating": null,
+        "distribution": {
+          "good": 62.9,
+          "needsImprovement": 33.6,
+          "poor": 3.5
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 98.1,
+          "needsImprovement": 1.8,
+          "poor": 0.1
+        }
+      },
+      "ttfb": {
+        "p75": 587,
+        "rating": "good",
+        "distribution": {
+          "good": 85.8,
+          "needsImprovement": 10.5,
+          "poor": 3.7
+        }
+      },
+      "fcp": {
+        "p75": 897,
+        "rating": "good",
+        "distribution": {
+          "good": 93.2,
+          "needsImprovement": 4.3,
+          "poor": 2.5
+        }
+      },
+      "inp": {
+        "p75": 83,
+        "rating": "good",
+        "distribution": {
+          "good": 97.1,
+          "needsImprovement": 2.3,
+          "poor": 0.6
+        }
+      },
+      "lcp": {
+        "p75": 909,
+        "rating": "good",
+        "distribution": {
+          "good": 96.1,
+          "needsImprovement": 2.1,
+          "poor": 1.8
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 3
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "probe": {
+      "metas": [],
+      "marks": [],
+      "markVersions": {}
+    },
+    "interstitial": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "nginx",
+      "detailIcon": "Nginx",
+      "source": "server"
+    },
+    "headers": {
+      "server": "nginx"
+    },
+    "violations": 10,
+    "passes": 442,
+    "incomplete": 3,
+    "violationRules": 8,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 2,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "#front-main",
+            "snippet": "<main id=\"front-main\">"
+          },
+          {
+            "selector": "footer",
+            "snippet": "<footer role=\"contentinfo\">"
+          }
+        ]
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 2,
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".mysoc-footer__legal > p > a:nth-child(1)",
+            "snippet": "<a href=\"https://www.societyworks.org?utm_source=fixmystreet.com&amp;utm_content=footer+full+legal+details&amp;utm_medium=link&amp;utm_campaign=mysoc_footer\">SocietyWorks</a>"
+          },
+          {
+            "selector": ".mysoc-footer__legal > p > a:nth-child(2)",
+            "snippet": "<a href=\"https://www.mysociety.org?utm_source=fixmystreet.com&amp;utm_content=footer+full+legal+details&amp;utm_medium=link&amp;utm_campaign=mysoc_footer\">mySociety</a>"
+          }
+        ]
+      },
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": 1,
+        "help": "ARIA role should be appropriate for the element",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "#main-nav-btn",
+            "snippet": "<input role=\"button\" type=\"checkbox\" id=\"main-nav-btn\" autocomplete=\"off\" aria-expanded=\"false\">"
+          }
+        ]
+      },
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "Elements must only use permitted ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "#nav-link",
+            "snippet": "<label id=\"nav-link\" for=\"main-nav-btn\" aria-label=\"Open main navigation\"></label>"
+          }
+        ]
+      },
+      {
+        "id": "landmark-contentinfo-is-top-level",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Contentinfo landmark should not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-contentinfo-is-top-level?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "footer",
+            "snippet": "<footer role=\"contentinfo\">"
+          }
+        ]
+      },
+      {
+        "id": "landmark-no-duplicate-contentinfo",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one contentinfo landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-contentinfo?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "footer",
+            "snippet": "<footer role=\"contentinfo\">"
+          }
+        ]
+      },
+      {
+        "id": "landmark-no-duplicate-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should not have more than one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-main?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "#front-main",
+            "snippet": "<main id=\"front-main\">"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": 1,
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/list?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".mysoc-footer__badges",
+            "snippet": "<ul class=\"mysoc-footer__badges\">"
+          }
+        ]
+      }
+    ],
+    "error": null
+  },
+  "render": {
+    "samples": [
+      {
+        "hash": "8f27ca1e6135",
+        "nonce": "ea4f617b30ec",
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "8"
+        }
+      },
+      {
+        "hash": "3a5c0d6abf16",
+        "nonce": "1fd99a4136cc",
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "5"
+        }
+      },
+      {
+        "hash": "31d639b205d9",
+        "nonce": "1c0df491bd3c",
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "5"
+        }
+      },
+      {
+        "hash": "eaea66b0da97",
+        "nonce": "55b68fcec56c",
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "5"
+        }
+      },
+      {
+        "hash": "3bee5b6df95a",
+        "nonce": "5ef39bf3f88c",
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "17"
+        }
+      }
+    ]
+  },
+  "consecutiveFailures": 0
+}

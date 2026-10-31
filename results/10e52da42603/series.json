@@ -1,0 +1,3 @@
+{"version":1,"url":"https://postboxes.dracos.co.uk/","updated":"2026-10-31T08:02:54.406Z","points":[
+{"t":1793433711550,"performance":95,"accessibility":92,"best-practices":85,"seo":92,"lcp":2899,"cls":0,"tbt":0,"fcp":786,"si":786,"ttfb":622,"total":456439,"requests":25,"bytes":400574,"mainThreadMs":0,"unusedJsBytes":0,"unusedCssBytes":0,"mainThreadTotal":228.4,"longTasks":0,"elements":84,"failingCount":3,"failingNodes":16,"axeViolations":20,"axePasses":337,"field-lcp":1562,"field-cls":0,"field-fcp":1334,"field-ttfb":654,"bench":3262.5,"runs":3,"reqRuns":3,"ms":62817,"spread":8}
+]}

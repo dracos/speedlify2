@@ -1,0 +1,3 @@
+{"version":1,"url":"https://www.whatdotheyknow.com/","updated":"2026-10-31T08:08:16.940Z","points":[
+{"t":1793434053898,"performance":79,"accessibility":96,"best-practices":92,"seo":83,"lcp":4385,"cls":0,"tbt":12,"fcp":3109,"si":3109,"ttfb":635,"total":690111,"requests":34,"bytes":225659,"mainThreadMs":25.5,"unusedJsBytes":180719,"unusedCssBytes":54117,"mainThreadTotal":502.7,"longTasks":1,"elements":491,"failingCount":1,"failingNodes":1,"axeViolations":7,"axePasses":934,"field-lcp":1483,"field-inp":170,"field-cls":0,"field-fcp":1244,"field-ttfb":661,"bench":3263,"runs":3,"reqRuns":3,"ms":43001,"spread":6}
+]}

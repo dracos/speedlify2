@@ -1,0 +1,327 @@
+{
+  "url": "https://split.traintimes.org.uk/",
+  "name": "split.traintimes.org.uk",
+  "group": "traintimes",
+  "groupName": "traintimes.org.uk",
+  "timestamp": 1793433828789,
+  "date": "2026-10-31T08:03:48.789Z",
+  "runId": "2026-10-31T08-00-37-498Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 67000,
+  "error": null,
+  "variance": {
+    "min": 99,
+    "max": 100,
+    "spread": 1,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://split.traintimes.org.uk/",
+    "finalUrl": "https://split.traintimes.org.uk/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 99,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 1575,
+      "lcp": 1575,
+      "si": 1575,
+      "tbt": 0,
+      "tti": 1575,
+      "cls": 0.006,
+      "ttfb": 611,
+      "maxPotentialFid": 16,
+      "serverResponseTime": 19,
+      "networkRtt": 15.7,
+      "networkServerLatency": 24.6
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 79.4,
+      "elementRenderDelay": 101.4
+    },
+    "weight": {
+      "total": 65294,
+      "requests": 9,
+      "mainDocument": 2435,
+      "byType": {
+        "total": {
+          "bytes": 63141,
+          "requests": 8
+        },
+        "script": {
+          "bytes": 37625,
+          "requests": 3
+        },
+        "image": {
+          "bytes": 19650,
+          "requests": 2
+        },
+        "stylesheet": {
+          "bytes": 3431,
+          "requests": 2
+        },
+        "document": {
+          "bytes": 2435,
+          "requests": 1
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "font": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "other": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 3152,
+          "requests": 1
+        }
+      },
+      "scripts": 3,
+      "stylesheets": 2,
+      "fonts": 0
+    },
+    "thirdParty": {
+      "count": 1,
+      "bytes": 3152,
+      "mainThreadMs": 0.5,
+      "top": [
+        {
+          "entity": "Cloudflare CDN",
+          "bytes": 3152,
+          "mainThreadMs": 0.5,
+          "byType": {
+            "script": 3152
+          },
+          "typedBytes": 3152
+        }
+      ]
+    },
+    "mainThread": {
+      "total": 282.9,
+      "byGroup": {
+        "styleLayout": 110.2,
+        "other": 84.5,
+        "scriptEvaluation": 58.9,
+        "scriptParseCompile": 15.6,
+        "paintCompositeRender": 8.1,
+        "parseHTML": 5.6
+      },
+      "bootupMs": 28.7,
+      "longTasks": 1,
+      "longestTaskMs": 58
+    },
+    "dom": {
+      "elements": 90,
+      "depth": 7,
+      "maxChildren": 10
+    },
+    "waste": {
+      "unusedJsBytes": 0,
+      "unusedCssBytes": 0,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 1263,
+      "renderBlockingCount": 5,
+      "poorlyCachedBytes": 57554,
+      "poorlyCachedCount": 6
+    },
+    "accessibility": {
+      "failingCount": 1,
+      "applicableCount": 17,
+      "failingNodes": 1,
+      "failing": [
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "weight": 3,
+          "nodes": 1
+        }
+      ]
+    },
+    "bestPractices": {
+      "failingCount": 0,
+      "applicableCount": 20,
+      "failing": []
+    },
+    "seo": {
+      "failingCount": 1,
+      "applicableCount": 9,
+      "failing": [
+        {
+          "id": "meta-description",
+          "title": "Document does not have a meta description",
+          "weight": 1,
+          "nodes": null
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": 1,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h2",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 4
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3257,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-31T08:03:49.891Z",
+      "runtimeMs": 5455.7
+    }
+  },
+  "throttledLcpBreakdown": {
+    "timeToFirstByte": 1125.9,
+    "elementRenderDelay": 443.8
+  },
+  "field": null,
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "probe": {
+      "metas": [],
+      "marks": [],
+      "markVersions": {}
+    },
+    "interstitial": null,
+    "host": {
+      "id": "self-hosted",
+      "name": "Self-hosted",
+      "icon": null,
+      "detail": "gunicorn",
+      "detailIcon": "Gunicorn",
+      "source": "server"
+    },
+    "headers": {
+      "server": "gunicorn"
+    },
+    "violations": 12,
+    "passes": 215,
+    "incomplete": 5,
+    "violationRules": 3,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 10,
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "#content > h2",
+            "snippet": "<h2>Split ticket finder</h2>"
+          },
+          {
+            "selector": ".hero",
+            "snippet": "<div class=\"hero\">"
+          },
+          {
+            "selector": "form > p:nth-child(1)",
+            "snippet": "<p> <label for=\"from\">From:</label> <input class=\"ac\" id=\"from\" type=\"text\" name=\"from\" value=\"\" autocomplete=\"off\"> </p>"
+          },
+          {
+            "selector": "form > p:nth-child(2)",
+            "snippet": "<p> <label for=\"to\">To:</label> <input class=\"ac\" id=\"to\" type=\"text\" name=\"to\" value=\"\" autocomplete=\"off\"> </p>"
+          },
+          {
+            "selector": "p:nth-child(3)",
+            "snippet": "<p> <label for=\"via\">Via: (optional)</label> <input class=\"ac\" id=\"via\" type=\"text\" name=\"via\" value=\"\" autocomplete=\"off\"> </p>"
+          }
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "html",
+            "snippet": "<html lang=\"en\">"
+          }
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1,
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "html",
+            "snippet": "<html lang=\"en\">"
+          }
+        ]
+      }
+    ],
+    "error": null
+  },
+  "render": {
+    "samples": [
+      {
+        "hash": "e75253e4d76e",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {}
+      },
+      {
+        "hash": "e75253e4d76e",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {}
+      },
+      {
+        "hash": "e75253e4d76e",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {}
+      },
+      {
+        "hash": "e75253e4d76e",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {}
+      },
+      {
+        "hash": "e75253e4d76e",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {},
+        "fromCache": true
+      }
+    ]
+  },
+  "consecutiveFailures": 0
+}

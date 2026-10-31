@@ -1,0 +1,412 @@
+{
+  "url": "https://postofficeinquiry.dracos.co.uk/",
+  "name": "Post Office Inquiry",
+  "group": "mine",
+  "groupName": "My sites",
+  "timestamp": 1793433774406,
+  "date": "2026-10-31T08:02:54.406Z",
+  "runId": "2026-10-31T08-00-37-498Z",
+  "formFactor": "mobile",
+  "requestedRuns": 3,
+  "completedRuns": 3,
+  "durationMs": 54342,
+  "error": null,
+  "variance": {
+    "min": 76,
+    "max": 78,
+    "spread": 2,
+    "runs": 3
+  },
+  "lab": {
+    "requestedUrl": "https://postofficeinquiry.dracos.co.uk/",
+    "finalUrl": "https://postofficeinquiry.dracos.co.uk/",
+    "redirect": null,
+    "statusCode": "ok",
+    "scores": {
+      "performance": 76,
+      "accessibility": 93,
+      "best-practices": 100,
+      "seo": 92,
+      "agentic-browsing": 100
+    },
+    "timings": {
+      "fcp": 2304,
+      "lcp": 5931,
+      "si": 2304,
+      "tbt": 66,
+      "tti": 5939,
+      "cls": 0,
+      "ttfb": 552,
+      "maxPotentialFid": 116,
+      "serverResponseTime": 68,
+      "networkRtt": 0,
+      "networkServerLatency": 102.1
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 69,
+      "elementRenderDelay": 628.6
+    },
+    "weight": {
+      "total": 758224,
+      "requests": 20,
+      "mainDocument": 36026,
+      "byType": {
+        "total": {
+          "bytes": 757835,
+          "requests": 19
+        },
+        "font": {
+          "bytes": 515809,
+          "requests": 4
+        },
+        "script": {
+          "bytes": 173845,
+          "requests": 9
+        },
+        "document": {
+          "bytes": 36026,
+          "requests": 1
+        },
+        "stylesheet": {
+          "bytes": 30542,
+          "requests": 4
+        },
+        "other": {
+          "bytes": 1613,
+          "requests": 1
+        },
+        "image": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "media": {
+          "bytes": 0,
+          "requests": 0
+        },
+        "third-party": {
+          "bytes": 0,
+          "requests": 0
+        }
+      },
+      "scripts": 9,
+      "stylesheets": 4,
+      "fonts": 4
+    },
+    "thirdParty": {
+      "count": 0,
+      "bytes": 0,
+      "mainThreadMs": 0,
+      "top": []
+    },
+    "mainThread": {
+      "total": 836.2,
+      "byGroup": {
+        "styleLayout": 261.9,
+        "scriptEvaluation": 202.4,
+        "other": 188,
+        "parseHTML": 85.3,
+        "scriptParseCompile": 54.2,
+        "paintCompositeRender": 37.9,
+        "garbageCollection": 6.5
+      },
+      "bootupMs": 242.5,
+      "longTasks": 2,
+      "longestTaskMs": 116
+    },
+    "dom": {
+      "elements": 6307,
+      "depth": 17,
+      "maxChildren": 60
+    },
+    "waste": {
+      "unusedJsBytes": 61347,
+      "unusedCssBytes": 19812,
+      "legacyJsBytes": 0,
+      "duplicatedJsBytes": 0,
+      "unminifiedJsBytes": 0,
+      "unminifiedCssBytes": 0,
+      "renderBlockingMs": 7974,
+      "renderBlockingCount": 12,
+      "poorlyCachedBytes": 623833.5083333334,
+      "poorlyCachedCount": 17
+    },
+    "accessibility": {
+      "failingCount": 2,
+      "applicableCount": 26,
+      "failingNodes": 804,
+      "failing": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "weight": 7,
+          "nodes": 798
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "weight": 7,
+          "nodes": 6
+        }
+      ]
+    },
+    "bestPractices": {
+      "failingCount": 0,
+      "applicableCount": 19,
+      "failing": []
+    },
+    "seo": {
+      "failingCount": 1,
+      "applicableCount": 9,
+      "failing": [
+        {
+          "id": "meta-description",
+          "title": "Document does not have a meta description",
+          "weight": 1,
+          "nodes": null
+        }
+      ]
+    },
+    "hygiene": {
+      "https": 1,
+      "hsts": 1,
+      "csp": 1,
+      "clickjacking": 1,
+      "originIsolation": null,
+      "trustedTypes": 1,
+      "bfCache": 1,
+      "bfCacheFailures": 0,
+      "protocol": "h3",
+      "legacyHttpRequests": 0,
+      "redirectMs": 0,
+      "consoleErrors": 0,
+      "baselineLimitedFeatures": 15
+    },
+    "environment": {
+      "lighthouseVersion": "13.4.1",
+      "benchmarkIndex": 3258,
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Mobile Safari/537.36",
+      "fetchTime": "2026-10-31T08:03:05.892Z",
+      "runtimeMs": 8606.4
+    }
+  },
+  "throttledLcpBreakdown": {
+    "timeToFirstByte": 1126,
+    "elementRenderDelay": 3664.6
+  },
+  "field": {
+    "source": "crux",
+    "scope": "origin",
+    "formFactor": "PHONE",
+    "collectionPeriod": {
+      "first": "2026-10-02",
+      "last": "2026-10-29"
+    },
+    "metrics": {
+      "rtt": {
+        "p75": 81,
+        "rating": null,
+        "distribution": {
+          "good": 70.8,
+          "needsImprovement": 25.1,
+          "poor": 4.1
+        }
+      },
+      "cls": {
+        "p75": 0,
+        "rating": "good",
+        "distribution": {
+          "good": 100,
+          "needsImprovement": 0,
+          "poor": 0
+        }
+      },
+      "ttfb": {
+        "p75": 496,
+        "rating": "good",
+        "distribution": {
+          "good": 94.6,
+          "needsImprovement": 4.2,
+          "poor": 1.2
+        }
+      },
+      "fcp": {
+        "p75": 1165,
+        "rating": "good",
+        "distribution": {
+          "good": 91.5,
+          "needsImprovement": 4.8,
+          "poor": 3.7
+        }
+      },
+      "lcp": {
+        "p75": 1316,
+        "rating": "good",
+        "distribution": {
+          "good": 92.4,
+          "needsImprovement": 5.1,
+          "poor": 2.5
+        }
+      }
+    },
+    "cwvPass": true,
+    "cwvAssessed": 2
+  },
+  "axe": {
+    "navigationTimedOut": false,
+    "generator": null,
+    "probe": {
+      "metas": [],
+      "marks": [
+        "lit",
+        "fontawesome"
+      ],
+      "markVersions": {
+        "lit": "3.3.3"
+      }
+    },
+    "interstitial": null,
+    "host": {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "icon": "Cloudflare",
+      "source": "server"
+    },
+    "headers": {
+      "cf-ray": "a531249ced80d404-MAN",
+      "server": "cloudflare"
+    },
+    "violations": 804,
+    "passes": 3912,
+    "incomplete": 0,
+    "violationRules": 2,
+    "version": "4.13.0",
+    "top": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 798,
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": ".important > .admonition-title",
+            "snippet": "<p class=\"admonition-title\">Important</p>"
+          },
+          {
+            "selector": "p:nth-child(2) > .external.reference",
+            "snippet": "<a class=\"reference external\" href=\"https://www.postofficehorizoninquiry.org.uk\">https://www.postofficehorizoninquiry.org.uk</a>"
+          },
+          {
+            "selector": ".note > .admonition-title",
+            "snippet": "<p class=\"admonition-title\">Note</p>"
+          },
+          {
+            "selector": "p:nth-child(5) > .external.reference:nth-child(1)",
+            "snippet": "<a class=\"reference external\" href=\"https://www.postofficehorizoninquiry.org.uk/hearings\">official transcripts</a>"
+          },
+          {
+            "selector": "a[href$=\"evidence/\"]",
+            "snippet": "<a class=\"reference external\" href=\"/projects/evidence/\">list 1</a>"
+          }
+        ]
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 6,
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=axe-puppeteer",
+        "samples": [
+          {
+            "selector": "p:nth-child(5) > .external.reference:nth-child(1)",
+            "snippet": "<a class=\"reference external\" href=\"https://www.postofficehorizoninquiry.org.uk/hearings\">official transcripts</a>"
+          },
+          {
+            "selector": "a[href$=\"evidence/\"]",
+            "snippet": "<a class=\"reference external\" href=\"/projects/evidence/\">list 1</a>"
+          },
+          {
+            "selector": "a[href$=\"evidence-2/\"]",
+            "snippet": "<a class=\"reference external\" href=\"/projects/evidence-2/\">list 2</a>"
+          },
+          {
+            "selector": "p:nth-child(6) > .external.reference",
+            "snippet": "<a class=\"reference external\" href=\"opening-statements/2022-10-13/#:~:text=worst%20miscarriage%20of%20justice\">worst miscarriage of justice in British legal history</a>"
+          },
+          {
+            "selector": "p:nth-child(8) > .external.reference:nth-child(1)",
+            "snippet": "<a class=\"reference external\" href=\"https://webarchive.nationalarchives.gov.uk/ukgwa/20090128221550/http://www.the-hutton-inquiry.org.uk/\">National Archive</a>"
+          }
+        ]
+      }
+    ],
+    "error": null
+  },
+  "render": {
+    "samples": [
+      {
+        "hash": "8c6c0f20942f",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "cf-cache-status": "HIT",
+          "etag": "\"ff58e7896fc64e307067ec78a67364ae\"",
+          "last-modified": "Mon, 25 May 2026 06:52:20 GMT"
+        }
+      },
+      {
+        "hash": "8c6c0f20942f",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "1087",
+          "cf-cache-status": "HIT",
+          "etag": "\"ff58e7896fc64e307067ec78a67364ae\"",
+          "last-modified": "Mon, 25 May 2026 06:52:20 GMT"
+        }
+      },
+      {
+        "hash": "8c6c0f20942f",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "1096",
+          "cf-cache-status": "HIT",
+          "etag": "\"ff58e7896fc64e307067ec78a67364ae\"",
+          "last-modified": "Mon, 25 May 2026 06:52:20 GMT"
+        }
+      },
+      {
+        "hash": "8c6c0f20942f",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "1106",
+          "cf-cache-status": "HIT",
+          "etag": "\"ff58e7896fc64e307067ec78a67364ae\"",
+          "last-modified": "Mon, 25 May 2026 06:52:20 GMT"
+        }
+      },
+      {
+        "hash": "8c6c0f20942f",
+        "nonce": null,
+        "stamp": null,
+        "marks": [],
+        "headers": {
+          "age": "1106",
+          "cf-cache-status": "HIT",
+          "etag": "\"ff58e7896fc64e307067ec78a67364ae\"",
+          "last-modified": "Mon, 25 May 2026 06:52:20 GMT"
+        },
+        "fromCache": true
+      }
+    ]
+  },
+  "consecutiveFailures": 0
+}
