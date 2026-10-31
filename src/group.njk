@@ -40,17 +40,6 @@ eleventyComputed:
 	#}
 	{% if group.description %}<p class="lede">{{ group.description | safe }}</p>{% endif %}
 	{#
-		Coverage, then cadence. Measurement is rolling and invisible from the
-		page, so "1,143 of 1,235 measured" reads as a gap to be closed rather than
-		as a schedule doing its job — the second half says which it is.
-	#}
-	<p class="muted">
-		{{ group.measured | num }} of {{ group.entries.length | countOf("site") }} measured
-		{%- if group.freshnessHours %} · each site {{ group.freshnessHours | cadence }}
-		{%- if group.lastMeasured %}, most recently <time datetime="{{ group.lastMeasured | iso }}">{{ group.lastMeasured | since }}</time> ago{% endif %}
-		{%- endif %}
-	</p>
-	{#
 		The other half of the note on the home page's Perfect scores board. Said
 		here too because this is where someone notices the absence: a starter with
 		full marks that is not on that board looks like an oversight unless the
@@ -161,9 +150,6 @@ eleventyComputed:
 		Not ranked, listed alphabetically. Still measured in case they return!
 	</p>
 	{% else %}
-	<p class="muted small">
-		Ranked by the circle color first: all green beats a row with amber, which beats red. Sites are not penalized for unknown Core Web Vitals. Tiebreakers include: sum of all four Lighthouse categories, fewest failing Core Web Vitals, then fewest axe violations, then Speed Index per KB — a heavy site outranks an empty one.
-	</p>
 	{% endif %}
 	<div class="table-scroll">
 	<table class="grid">
@@ -200,10 +186,7 @@ eleventyComputed:
 						<span title="{{ entry.displayUrl }}">{{ entry.displayUrl }}</span>
 					</a>
 					{% if entry.hiring %}<span class="badge badge-hiring">{{ entry.hiring.label }}</span>{% endif %}
-					{% if entry.latest %}<span class="updated-tag {{ 'stale-age' if entry.dataStale }}" title="Measured {{ entry.latest.date | date('long') }}"><time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time></span>{% else %}<span class="updated-tag never">never</span>{% endif %}
 					{% if entry.currentlyFailing %}<span class="badge badge-error" title="{{ entry.lastError }}">failing</span>{% endif %}
-					{% if entry.redirectTo and entry.redirectTo != entry.url %}<span class="badge badge-redirect" title="Measured through a redirect to {{ entry.redirectTo }}{% if entry.redirectConfirmed %} — confirmed, so history will follow it{% else %} — {{ entry.redirectReason }}{% endif %}">&#8618; redirect</span>
-					{% elif entry.canonicalUrl %}<span class="badge badge-redirect" title="Measured through a redirect to {{ entry.canonicalUrl }} — the site's canonical form of this URL">&#8618; redirect</span>{% endif %}
 					{% if entry.unlisted %}<span class="badge badge-unlisted" title="Built with {{ entry.unlisted.generator }} but not in {{ entry.unlisted.groupName }} — nobody has submitted it to the 11ty/11ty-community repository">unlisted</span>{% endif %}
 				</td>
 				{% if entry.latest %}

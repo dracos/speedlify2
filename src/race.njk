@@ -6,11 +6,6 @@ title: Compare
 
 <header class="detail-head">
 	<h2 class="page-hed">Compare</h2>
-	<p class="lede">
-		Two sites drawing side by side, replayed from the filmstrips Lighthouse
-		captured while measuring them. The clock is the load that was actually
-		recorded, so a lane that is further along really did get there first.
-	</p>
 </header>
 
 {#
@@ -128,67 +123,20 @@ title: Compare
 
 	<p class="race-result" id="race-result" role="status"></p>
 
-	<p class="muted small race-note">
-		Frames are thumbnails from the median Lighthouse run on the emulated
-		{{ sites.config.formFactor }} profile, timed from navigation start and
-		resampled here onto one shared grid, since each run samples on its own
-		schedule. The clock is that recorded load. Each strip is only eight samples
-		of its own run, and Lighthouse sizes that run's timeline to the run, so a
-		lane simply stops where its capture stops rather than holding its last
-		frame across an axis built for a longer one.
-	</p>
-	{#
-		Two accounts of the same page, one per capture, swapped by the control at
-		the top of the form. They cannot be one paragraph hedged both ways: the
-		unthrottled note exists to warn that the frames are faster than any visitor
-		would see, and the throttled one exists to say the opposite.
-	#}
 	<div id="race-note-unthrottled" hidden>
 	<p class="muted small race-note">
-		<strong>These frames are barely throttled.</strong> The runs use Lighthouse's
-		default simulated throttling, which does not slow the connection or the
-		processor: it clears network throttling before the load and never applies
-		CPU throttling at all. Device emulation is real &mdash; a phone-sized
-		viewport and a mobile user agent, so this is genuinely the
-		{{ sites.config.formFactor }} layout &mdash; but the page otherwise arrives
-		as fast as the measuring machine and its connection allow. The one
-		exception is <code>requestIdleCallback</code>, which Lighthouse shims to
-		hand back a quarter of its usual budget per callback, so a page that
-		schedules work that way does spread it thinner here than it would on your
-		machine.
-	</p>
-	<p class="muted small race-note">
+		The frames are thumbnails from the median Lighthouse run on the emulated
+		{{ sites.config.formFactor }} profile, barely throttled.
 		Slow 4G and a 4&times; CPU slowdown are applied afterwards instead, by
-		Lighthouse's Lantern model, as an estimate of what that load would have
-		been over a slow connection. That is where TTFB, FCP and LCP come from, and
-		it is why none of them are drawn on this axis: the frames are one load and
-		those numbers describe a different, slower one that never actually ran.
-		Both are correct about different things, and no offset reconciles them: a
-		page can be fully painted in these frames well before the FCP it reports.
-		So the finish line here is the observed one:
-		when a lane's picture stops changing. The rings beside each lane are that
-		site's scores, which are about the site rather than about this clock. This
-		is a picture of two measurements, not a benchmark.
+		Lighthouse’s Lantern model, as an estimate of what the load would have
+		been over a slow connection.
 	</p>
 	</div>
 
 	<div id="race-note-throttled">
 	<p class="muted small race-note">
-		<strong>These frames are of a throttled load.</strong> The runs applied
-		Lighthouse's Slow 4G profile and a 4&times; CPU slowdown to the browser
-		itself &mdash; not to a model afterwards &mdash; so the page arrived over a
-		deliberately slow connection on a deliberately slow processor. What you are
-		watching is much closer to what someone on a phone would sit through than
-		an unthrottled capture is.
-	</p>
-	<p class="muted small race-note">
-		The TTFB, FCP and LCP flags in each lane are observed in the same trace as
-		its frames, so they line up with the pictures. They come from one throttled
-		load, not the site's scored runs, so they can differ from the numbers on its
-		site page. A close result is closer than it looks.
-		The rings beside each lane are that site's scores, which are about the site
-		rather than about this clock. This is a picture of two measurements, not a
-		benchmark.
+		The frames are thumbnails from the median Lighthouse run on the emulated
+		{{ sites.config.formFactor }} profile (slow 4G and a 4&times; CPU slowdown to the browser).
 	</p>
 	</div>
 </div>

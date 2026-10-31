@@ -415,14 +415,12 @@ export default async function ($config) {
 		if (style === "long") {
 			// Explicit components, not dateStyle/timeStyle: Intl rejects those in
 			// combination with timeZoneName, which is the whole point here.
-			return d.toLocaleString("en-US", {
+			return d.toLocaleString("en-GB", {
 				year: "numeric",
-				month: "short",
+				month: "long",
 				day: "numeric",
 				hour: "numeric",
 				minute: "2-digit",
-				timeZone: "UTC",
-				timeZoneName: "short",
 			});
 		}
 		// Year first, then the month by name: "2026 Aug 30". Big-endian like the

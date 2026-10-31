@@ -144,30 +144,14 @@ eleventyComputed:
 		    number rather than to the list. #}
 		{%- endif %}
 		{% endfor %}
-	</p>
-	<p class="muted data-age {{ 'stale-age' if entry.dataStale }}">
+        &middot;
+        <span class="muted">
 		{% if entry.latest %}
-			{#- No dash and no full stop: the age is a pill rather than the end of a
-			    sentence, and punctuation either side of it reads as stray marks. #}
 			Data from {{ entry.latest.date | date("long") }}
-			<span class="age-pill{{ ' stale' if entry.dataStale }}"><time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time> old</span>
-			{%- if entry.dataStale %}, older than this category's {{ entry.staleAfterHours | duration }} freshness target{% endif %}
 		{% else %}
 			No successful measurement yet.
 		{% endif %}
-		{#
-			How often this site comes round, beside how old its data is — the
-			second number is what makes the first readable. Six days old is
-			alarming on a daily site and ordinary on a weekly one.
-
-			The window is the strictest across the categories it belongs to, so
-			the title names which ones set it rather than stating a figure with
-			no provenance.
-		#}
-		{% if entry.freshnessHours %}Measured {{ entry.freshnessHours | cadence }}{% endif %}
-		· {{ entry.totalCount }} run{{ "s" if entry.totalCount != 1 }}
-		{% if entry.windowed %}<span title="The report charts the most recent {{ entry.historyCount }}; the rest stay on disk">(charting last {{ entry.historyCount }})</span>{% endif %}
-		{% if entry.firstMeasured %} since {{ entry.firstMeasured | date }}{% endif %}
+        </span>
 	</p>
 	{#
 		Somewhere else to run the same question.
@@ -239,6 +223,49 @@ eleventyComputed:
 		<a href="{{ entry.url | wayback }}"
 			title="Every archived snapshot of this URL in the Internet Archive's Wayback Machine"><img class="action-mark" src="{{ "https://web.archive.org/" | avatar(meta.avatarService) }}" width="16" height="16" alt="" decoding="async">Wayback Machine</a>
 	</p>
+
+{% set hasStack = entry.generator or entry.host or entry.tools.length or entry.render %}
+{% if hasStack %}
+<section class="panel" id="stack">
+	<div class="stack-list">
+		{% if entry.generator %}
+		<div class="stack-item">
+			{% stackIcon entry.generator, 24 %}
+			<span>
+				<span class="stack-label block">Built with</span>
+				{{ entry.generator.name }}{% if entry.generator.version %} {{ entry.generator.version }}{% endif %}
+			</span>
+		</div>
+		{% endif %}
+		{% if entry.tools.length %}
+		<div class="stack-item">
+			<span>
+				<span class="stack-label block">Uses</span>
+				<span class="stack-tools">
+					{#- An implied tool says which tool brings it, so it reads as part of that
+					    choice rather than as a second one. -#}
+					{% for tool in entry.tools %}<span class="stack-tool{% if tool.implied %} stack-tool-implied{% endif %}"{% if tool.implied %} title="Comes with {{ tool.implied }}"{% endif %}>{% stackIcon tool, 18 %}{{ tool.name }}{% if tool.version %} {{ tool.version }}{% endif %}</span>{% endfor %}
+				</span>
+			</span>
+		</div>
+		{% endif %}
+		{% if entry.host %}
+		<div class="stack-item">
+			{% stackIcon entry.host, 24 %}
+			<span>
+				<span class="stack-label block">Hosted by</span>
+				{{ entry.host.name }}
+			</span>
+		</div>
+		{% endif %}
+	</div>
+</section>
+{% endif %}
+
+
+
+
+
 	</div>
 	{#
 		After the text, not before it: the heading is what the page is about and
@@ -258,6 +285,7 @@ eleventyComputed:
 			alt="" loading="lazy" decoding="async">
 	</a>
 	{% endif %}
+
 </header>
 
 {#
@@ -316,25 +344,6 @@ eleventyComputed:
 		Not yet confirmed as a move; it needs to lead to the same place on
 		several consecutive runs first.
 		{% endif %}
-	</p>
-</div>
-{% endif %}
-
-{% if entry.canonicalUrl and not entry.redirectTo %}
-<div class="notice notice-info">
-	<strong>This URL redirects to <code>{{ entry.canonicalUrl }}</code>.</strong>
-	<p>
-		{% if entry.canonicalKind == "landing" %}
-		The site&rsquo;s front door pointing at the page it serves there &mdash; a
-		locale or CMS landing path, not a move. The origin is still the address of
-		the site, so history stays under it rather than forking to a path that
-		depends on where the measurement ran.
-		{% else %}
-		The same URL in a different form &mdash; a trailing slash &mdash; so both
-		are treated as one site rather than two: one history, measured once.
-		{% endif %}
-		Lighthouse follows the redirect, so the numbers below describe the page
-		actually served; the only cost is an extra hop on each run.
 	</p>
 </div>
 {% endif %}
@@ -463,7 +472,6 @@ eleventyComputed:
 	a heading beside its own subheading reads as two destinations when it is one.
 #}
 {% set toc = [] %}
-{% if hasStack %}{% set toc = (toc.push({ id: "stack", label: "Stack" }), toc) %}{% endif %}
 {% if hasFilmstrip %}{% set toc = (toc.push({ id: "filmstrip", label: "Filmstrip" }), toc) %}{% endif %}
 {% set toc = (toc.push({ id: "scores", label: "Scores" }), toc) %}
 {#
@@ -479,56 +487,6 @@ eleventyComputed:
 
 {% from "contents.njk" import contents %}
 {{ contents(toc) }}
-
-<p class="muted small">Lab data is measured using Lighthouse, {{ entry.latest.formFactor | capitalize }} mode unless otherwise specified. Field data is reported from Chrome UX Report (using p75 measurements).</p>
-
-{% if hasStack %}
-<section class="panel" id="stack">
-	<h2>Stack</h2>
-	<div class="stack-list">
-		{% if entry.generator %}
-		<div class="stack-item">
-			{% stackIcon entry.generator, 24 %}
-			<span>
-				<span class="stack-label block">Built with</span>
-				{{ entry.generator.name }}{% if entry.generator.version %} {{ entry.generator.version }}{% endif %}
-			</span>
-		</div>
-		{% endif %}
-		{% if entry.tools.length %}
-		<div class="stack-item">
-			<span>
-				<span class="stack-label block">Uses</span>
-				<span class="stack-tools">
-					{#- An implied tool says which tool brings it, so it reads as part of that
-					    choice rather than as a second one. -#}
-					{% for tool in entry.tools %}<span class="stack-tool{% if tool.implied %} stack-tool-implied{% endif %}"{% if tool.implied %} title="Comes with {{ tool.implied }}"{% endif %}>{% stackIcon tool, 18 %}{{ tool.name }}{% if tool.version %} {{ tool.version }}{% endif %}</span>{% endfor %}
-				</span>
-			</span>
-		</div>
-		{% endif %}
-		{% if entry.host %}
-		<div class="stack-item">
-			{% stackIcon entry.host, 24 %}
-			<span>
-				<span class="stack-label block">Hosted by</span>
-				{{ entry.host.name }}
-			</span>
-		</div>
-		{% endif %}
-		{% if entry.render %}
-		<div class="stack-item">
-			<span>
-				<span class="stack-label block">Rendered</span>
-				{{ entry.render.name }}
-				<span class="stack-detail block">{{ entry.render.detail }}</span>
-			</span>
-		</div>
-		{% endif %}
-	</div>
-</section>
-{% endif %}
-
 
 {% if hasFilmstrip %}
 {#
@@ -839,33 +797,6 @@ eleventyComputed:
 	</div>
 	{% endif %}
 
-	{% if showField %}
-	<p class="muted small">
-		Field figures are the p75 across real Chrome users over a 28-day trailing window
-		{%- if fieldPeriod.first %} ({{ fieldPeriod.first }} &rarr; {{ fieldPeriod.last }}){% endif %}
-		{%- if fieldScope %}, {{ fieldScope }}-level{% endif %}.
-		{% if not hasField %}
-		From the backfilled CrUX history rather than this measurement, which predates the API key.
-		{% endif %}
-	</p>
-	{% else %}
-	{#
-		Why the table is half the width it is on other sites. Without this the
-		field columns are simply absent, which reads as a page that forgot them
-		rather than as a site too quiet for CrUX to report on — and it is the
-		commonest case in this corpus by a wide margin.
-	#}
-	<p class="muted small">
-		{% if sites.cruxEnabled %}
-		No field data: the Chrome UX Report has too few samples for this URL to report on,
-		so every figure below is from the Lighthouse run. This is ordinary for a site
-		without much traffic, and says nothing about how fast it is.
-		{% else %}
-		No field data: the Chrome UX Report is not being collected for this project,
-		so every figure below is from the Lighthouse run.
-		{% endif %}
-	</p>
-	{% endif %}
 	{{ metricstable(entry.metricsTable, entry, showField, throttleTag(labKind)) }}
 
 	{#
@@ -1124,19 +1055,6 @@ eleventyComputed:
 <section class="panel" id="without-javascript">
 	<h2>Without JavaScript</h2>
 	{% if entry.clientRendered %}
-	{#
-		Directly under the heading, ahead of the caption and the frames, so the
-		reader knows what they are looking at before they look. A blank capture
-		beside a full one is ambiguous on sight — it could as easily be a load
-		that failed — and the caption under it only says "Scripts disabled", not
-		that the emptiness is the finding.
-
-		A sibling of the heading rather than a member of the frame row: it is a
-		statement about the section, and inside the row it was a flex item that
-		had to be told to span the width. The same notice treatment the page uses
-		above for stale data and redirects, because it is the same kind of
-		statement — a caveat about what follows, not a caption on it.
-	#}
 	<div class="notice notice-warn nojs-verdict">
 		<strong><i class="fa-solid fa-triangle-exclamation csr-icon" width="12" height="12" aria-hidden="true"></i> This page is client rendered.</strong>
 		<p>
@@ -1146,11 +1064,6 @@ eleventyComputed:
 		</p>
 	</div>
 	{% endif %}
-	<p class="muted small">
-		The same load, photographed twice at
-		{{ entry.ownScreenshot.width or 800 }}&times;{{ entry.ownScreenshot.height or 600 }}: once with
-		scripts disabled, once as rendered.
-	</p>
 	{#
 		The share of pixels that differ between the two captures.
 
@@ -1193,12 +1106,11 @@ eleventyComputed:
 			<strong>{{ entry.ownScreenshot.difference }}%</strong>
 			<span class="muted small">of pixels differ &mdash;
 				{% if entry.ownScreenshot.difference >= 95 %}they have almost nothing in common
-				{%- elif entry.ownScreenshot.difference >= 50 %}the page changes substantially
+				{%- elif entry.ownScreenshot.difference >= 33 %}the page changes substantially
 				{%- elif entry.ownScreenshot.difference >= 10 %}parts of the page change
 				{%- elif entry.ownScreenshot.difference > 0 %}they are nearly identical
 				{%- else %}they are identical{% endif %}.
-				A shifted layout counts as difference, so a &lt;noscript&gt; banner alone
-				can account for a large figure.</span>
+				</span>
 		</p>
 		{% endif %}
 	</div>
@@ -1258,8 +1170,7 @@ eleventyComputed:
 	<p class="muted small">
 		<strong>{{ entry.axe.violations }}</strong> violating node{{ "s" if entry.axe.violations != 1 }}
 		across {{ entry.axe.violationRules }} rule{{ "s" if entry.axe.violationRules != 1 }},
-		{{ entry.axe.passes }} passing. This is a standalone Axe CLI run and is stricter than the
-		subset Lighthouse already includes.
+		{{ entry.axe.passes }} passing.
 	</p>
 	{% if entry.axe.top.length %}
 	<ul class="failures">
@@ -1339,10 +1250,7 @@ eleventyComputed:
 <section class="panel" id="log">
 	<h2>Measurement log</h2>
 	{% if hasFieldHistory %}
-	<h3 id="field-history">Field history <span class="tag">{{ entry.fieldHistory.series.length }} weeks</span></h3>
-	<p class="muted small">
-		Weekly p75 from the CrUX History API, backfilled in a single request.
-	</p>
+	<h3 id="field-history">Field history (p75) <span class="tag">{{ entry.fieldHistory.series.length }} weeks</span></h3>
 	<div class="table-scroll">
 	<table class="grid compact">
 		<thead>
@@ -1393,9 +1301,6 @@ eleventyComputed:
 		heading it is the measurement log, and a subheading would repeat it.
 	#}
 	{% if hasFieldHistory %}<h3>Runs</h3>{% endif %}
-	<p class="muted small">
-		Every stored run for this URL, newest first.
-	</p>
 	<div class="table-scroll">
 	<table class="grid compact">
 		<thead>

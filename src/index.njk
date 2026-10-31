@@ -7,30 +7,6 @@ permalink: /index.html
 {% from "statbar.njk" import statbar %}
 {% from "stacks.njk" import technology %}
 
-{#
-	The page's own sections, built from the same conditions the sections use so
-	an entry never points at something that was not rendered. Categories are a
-	separate list further down: those go to other pages, and a table of contents
-	that leaves the page is not one.
-
-	Sticky, like the site page's — this page is long, and the sections below the
-	leaderboard are a thousand rows out of sight.
-#}
-{% set toc = [] %}
-{% if sites.groups.length > 1 or sites.moving.length or sites.orphans.length %}
-	{% set toc = (toc.push({ id: "categories", label: "Categories" }), toc) %}
-{% endif %}
-{% set toc = (toc.push({ id: "summary", label: "Summary" }), toc) %}
-{% if sites.stats.measured %}{% set toc = (toc.push({ id: "leaderboard", label: "Perfect scores" }), toc) %}{% endif %}
-{% if sites.stacks.generators.items.length or sites.stacks.hosts.items.length %}
-	{% set toc = (toc.push({ id: "stacks", label: "Technology" }), toc) %}
-{% endif %}
-{% if sites.moving.length %}{% set toc = (toc.push({ id: "moving", label: "Redirects" }), toc) %}{% endif %}
-{% if sites.orphans.length %}{% set toc = (toc.push({ id: "orphans", label: "Orphaned" }), toc) %}{% endif %}
-{% if sites.archived.length %}{% set toc = (toc.push({ id: "archived", label: "Archived" }), toc) %}{% endif %}
-
-{{ contents(toc) }}
-
 {% if sites.groups.length > 1 or sites.moving.length or sites.orphans.length %}
 <section class="group" id="categories">
 	<div class="group-head">
@@ -58,15 +34,6 @@ permalink: /index.html
 				page behind the link can actually show you.
 			#}
 			<span class="contents-count" title="{{ group.measured | num }} of {{ group.entries.length | num }} {{ group.entries.length | plural('site') }} in {{ group.name }} {{ group.measured | verb('has', 'have') }} data">×{{ group.measured | num }}</span>
-			{#
-				How long ago anything in this category was last measured. Measurement
-				is rolling and each category sets its own cadence, so the curated
-				handfuls refresh daily while the big imported lists take days to come
-				round — a figure worth showing rather than leaving to be inferred.
-			#}
-			{% if group.lastMeasured %}
-			<span class="contents-age" title="Most recently measured site in {{ group.name }}: {{ group.lastMeasured | date('long') }}"><time datetime="{{ group.lastMeasured | iso }}">{{ group.lastMeasured | since }}</time> ago</span>
-			{% endif %}
 		</li>
 		{% endif %}
 		{% endfor %}
@@ -145,7 +112,7 @@ permalink: /index.html
 			<span class="head-count" title="{{ shown.length | num }} of {{ sites.stats.measured | num }} measured {{ sites.stats.measured | plural('site') }} score {{ perfectTotal }} with nothing amber or red beside it">{{ shown.length | num }} {{ shown.length | plural('site') }}</span>
 		</h2>
 		<p class="muted">
-			These websites score {{ perfectTotal }} in all {{ metrics.SCORES.length }} Lighthouse categories, have no Axe CLI violations, and have passing (or unknown) Core Web Vitals. Tiebreakers on Speed Index per KB, plus TTFB and blocking time — a heavy site outranks an empty site.
+			{{ perfectTotal }} in all {{ metrics.SCORES.length }} Lighthouse categories, no Axe CLI violations, and passing (or unknown) Core Web Vitals.
 		</p>
 		{#
 			Stated rather than left to be noticed: a site with full marks that is
@@ -226,7 +193,6 @@ permalink: /index.html
 						<span title="{{ entry.displayUrl }}">{{ entry.displayUrl }}</span>
 					</a>
 					{% if entry.hiring %}<span class="badge badge-hiring">{{ entry.hiring.label }}</span>{% endif %}
-					{% if entry.latest %}<span class="updated-tag {{ 'stale-age' if entry.dataStale }}" title="Measured {{ entry.latest.date | date('long') }}"><time datetime="{{ entry.latest.date | iso }}">{{ entry.latest.date | since }}</time></span>{% else %}<span class="updated-tag never">never</span>{% endif %}
 					{#
 						Straight after the name, ahead of the other badges: it is the
 						one thing on the row that is news rather than a caveat.

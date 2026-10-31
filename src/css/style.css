@@ -1,56 +1,44 @@
 /* speedlify — one stylesheet, no build step, no client JS. */
 
-/*
- * Dark by default, ignoring the system preference. A saved light override sets data-theme="light" on <html>.
- * Each color token is light-dark(light, dark), resolved by color-scheme.
- */
 :root {
-	color-scheme: dark;
+	color-scheme: light;
 }
-:root[data-theme="light"] { color-scheme: light; }
 
 :root {
-	--bg: light-dark(#fbfbfd, #2e2e2e);
-	--surface: light-dark(#ffffff, #383838);
-	--border: light-dark(#e3e5ea, #4a4a4a);
-	--border-strong: light-dark(#cdd1da, #5c5c5c);
-	--text: light-dark(#14161a, #ffffff);
-	--text-muted: light-dark(#666d7a, #b0b0b0);
-	/* For muted text sitting on a *tinted* surface rather than on the page.
-	   Several components here tint their own background from --text-muted — a
-	   pill 15-25% of its own text color — which pulls the two together and
-	   drops the pair under 4.5:1 no matter how legible each looks alone. This is
-	   the same gray, far enough along to clear the contrast floor on every one
-	   of those surfaces (worst case the 25% chip, at 4.52:1 dark; on a #d6d8dc
-	   light surface, where #606060 missed at 4.41:1). */
-	--text-muted-strong: light-dark(#585858, #cbcbcb);
+	--bg: #fff;
+	--surface: #fff;
+	--border: #b2b8c2;
+	--border-strong: #959eb0;
+	--text: #14161a;
+	--text-muted: #3d4149;
+	--text-muted-strong: #3d4149;
 
 	/* Lighthouse's own score banding, used for the rings and the numbers.
 	   Darkened for contrast on white in light mode. */
-	--good: light-dark(#0a7c42, #0cce6b);
-	--good-bg: light-dark(#e6f5ec, #143a28);
-	--average: light-dark(#9a6200, #ffa400);
-	--average-bg: light-dark(#fdf3e0, #3d2f14);
-	--poor: light-dark(#c02026, #ff4e42);
-	--poor-bg: light-dark(#fdeaea, #3d1f1d);
+	--good: #0a7c42;
+	--good-bg: #e6f5ec;
+	--average: #9a6200;
+	--average-bg: #fdf3e0;
+	--poor: #c02026;
+	--poor-bg: #fdeaea;
 	/* --poor is a ring stroke first, where contrast rules do not apply. As text
 	   it fails in dark: 4.15:1 on the page and 3.58:1 on a card. This is the same
 	   hue lightened until it passes on both. The light value already passes —
 	   5.22:1 on the failing-row tint, its worst case. */
-	--poor-text: light-dark(#c02026, #ff8078);
+	--poor-text: #c02026;
 	/* Softer than --poor, for a count that is context rather than a verdict on
 	   any one row. Pink rather than red: still clearly the bad news, without
 	   competing with the failing rows themselves. Deeper in light: a pale pink
 	   on white is unreadable, so the hue carries the softness and the value
 	   carries the contrast. */
-	--poor-soft: light-dark(#c2185b, #ff9fb0);
+	--poor-soft: #c2185b;
 	/* Softer again, for a move in the wrong direction on a metric still rated
 	   good. Half the pink of --poor-soft and half the muted gray, which is the
 	   weight this deserves: visible as a direction, not as a verdict. 6.56:1 on
 	   the page, 5.67:1 on a card (6.26:1 and 6.47:1 in light). */
-	--poor-faint: light-dark(#94426a, #d8a8b0);
+	--poor-faint: #94426a;
 
-	--accent: light-dark(#1a5fd0, #7cc0ff);
+	--accent: #1a5fd0;
 
 	/* The four phases of LCP. Four hues rather than four shades of one, because
 	   the segments sit side by side in a 4px bar and shades of a single color
@@ -61,16 +49,16 @@
 	   itself — a page dominated by render delay is not failing, it is telling
 	   you where its time goes. Darkened in light mode, where the pastels are
 	   invisible. */
-	--lcp-ttfb: light-dark(#1a5fd0, #7cc0ff);
-	--lcp-load-delay: light-dark(#6b34c9, #b28dff);
-	--lcp-load-duration: light-dark(#0e7c74, #4ecdc4);
-	--lcp-render-delay: light-dark(#c2357f, #ff9ecb);
+	--lcp-ttfb: #1a5fd0;
+	--lcp-load-delay: #6b34c9;
+	--lcp-load-duration: #0e7c74;
+	--lcp-render-delay: #c2357f;
 
-	--button: light-dark(#eceef2, #444444);
+	--button: #eceef2;
 	--radius: 8px;
 	--pill: 50px;
 	--mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-	--sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	--sans: system-ui, sans-serif;
 
 	/* Build Awesome's balloon green, and a near-black from the same family for
 	   text sitting on it. Identical in both themes: it is a brand color, not a
@@ -80,7 +68,7 @@
 	--brand-text: #052b20;
 
 	/* TTFB, FCP and LCP flags on filmstrip lanes; a shade deeper in light mode so the pole shows on white. */
-	--metric-flag: light-dark(#b49cf5, #c9b3ff);
+	--metric-flag: #b49cf5;
 	--metric-flag-text: #2a1454;
 }
 
@@ -141,7 +129,6 @@ pre code { font-size: inherit; }
 /* ------------------------------------------------------------------ header */
 
 .masthead {
-	border-bottom: 1px solid var(--border);
 	background: var(--surface);
 	position: sticky;
 	top: 0;
@@ -190,6 +177,7 @@ pre code { font-size: inherit; }
 	flex-wrap: nowrap;
 	overflow-x: auto;
 	gap: 0.75rem;
+	column-rule: 1px solid var(--border);
 	margin-bottom: 2.5rem;
 	/* Out to the page gutter, no further. The row is a child of the content
 	   column and stays inside it: where it needs more room than the column has,
@@ -205,8 +193,6 @@ pre code { font-size: inherit; }
 	   rather than leaving a ragged right edge. */
 	flex: 1 1 14em;
 	background: var(--surface);
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
 	padding: 0.9rem 1rem;
 }
 .stat-value { display: block; font-size: 1.5rem; font-weight: 650; letter-spacing: -0.02em; }
@@ -230,10 +216,9 @@ pre code { font-size: inherit; }
 .stat-label {
 	display: block;
 	margin-bottom: 0.35rem;
-	font-size: 0.78rem;
+	font-size: 0.875rem;
 	color: var(--text-muted);
-	text-transform: uppercase;
-	letter-spacing: 0.04em;
+    font-weight: bold;
 }
 /* A second figure under a stat: the share of that number attributable to one
    thing, with the marks standing in for naming it twice. */
@@ -279,8 +264,6 @@ pre code { font-size: inherit; }
    overflow-x container is clipped, not pulled out. */
 .table-scroll {
 	overflow-x: auto;
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
 	background: var(--surface);
 	margin-inline: calc(-1 * var(--page-gutter-padding));
 }
@@ -288,9 +271,7 @@ pre code { font-size: inherit; }
 table.grid { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
 table.grid th {
 	text-align: right;
-	font-size: 0.72rem;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	font-size: 0.875rem;
 	color: var(--text-muted);
 	font-weight: 600;
 	padding: 0.6rem var(--page-gutter-padding);
@@ -728,8 +709,6 @@ fieldset[disabled] select {
 	aspect-ratio: 1;
 	object-fit: cover;
 	object-position: top center;
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
 	background: var(--surface);
 }
 
@@ -743,15 +722,15 @@ fieldset[disabled] select {
 
 /* ------------------------------------------------------------------- cards */
 
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem;
+	column-rule: 1px solid var(--border);
+}
 .card {
 	background: var(--surface);
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
 	padding: 0.9rem 1rem;
 }
 .card-value { font-size: 2rem; font-weight: 650; line-height: 1.1; letter-spacing: -0.03em; }
-.card-label { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.4rem; }
+.card-label { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.4rem; }
 .card-spark { margin-top: 0.3rem; }
 .card-delta { font-size: 0.78rem; font-variant-numeric: tabular-nums; }
 
@@ -833,9 +812,7 @@ fieldset[disabled] select {
 	flex-wrap: wrap;
 	align-items: baseline;
 	gap: 0.25rem 0.6rem;
-	border: 1px solid var(--border);
-	border-left-width: 3px;
-	border-radius: var(--radius);
+	border-left: 3px solid var(--border);
 	padding: 0.7rem 1rem;
 	margin-bottom: 1rem;
 	background: var(--surface);
@@ -2239,8 +2216,6 @@ fieldset[disabled] select {
 .failures { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.35rem; }
 .failures li {
 	background: var(--surface);
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
 	padding: 0.5rem 0.8rem;
 	font-size: 0.86rem;
 	display: flex;
@@ -2296,10 +2271,10 @@ fieldset[disabled] select {
 /* ------------------------------------------------------------------ footer */
 
 .footer {
-	border-top: 1px solid var(--border);
 	margin-top: 3rem;
-	padding: 1.5rem 0 2.5rem;
+	padding: 1.5rem 0;
 	font-size: 0.83rem;
+    background-color: var(--good-bg);
 	color: var(--text-muted);
 
 	a:has(svg) {
@@ -2413,9 +2388,9 @@ fieldset[disabled] select {
 
 /* ==================================================== leaderboard look ==== */
 
-.masthead { position: static; border-bottom: 1px solid var(--border); background: transparent; }
+.masthead { position: static; background: transparent; }
 .masthead .wrap { display: block; text-align: center; padding-top: 2.5rem; padding-bottom: 1.75rem; min-height: 0; }
-.masthead-hed { margin: 0 0 0.5rem; font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; letter-spacing: -0.02em; }
+.masthead-hed { margin: 0 0 0.5rem; font-size: clamp(1.5rem, 6vw, 3rem); font-weight: 700; letter-spacing: -0.02em; }
 
 /* Flex so the mark sits beside the name rather than on its baseline: the glyph
    is a solid block with no descender, and baseline alignment drops it low
@@ -2728,10 +2703,14 @@ td.col-stack { position: relative; }
 .stack-presumed { opacity: 0.65; }
 .stack-none { color: var(--text-muted); opacity: 0.4; }
 
+.panel#stack {
+    margin: 0.75rem 0;
+}
+
 /* Detected stack on the site detail page. */
 .stack-list { display: flex; flex-wrap: wrap; gap: 1.25rem; }
 .stack-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; }
-.stack-item .stack-label { color: var(--text-muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.stack-item .stack-label { color: var(--text-muted); font-size: 0.875rem; }
 .stack-tools { display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; }
 .stack-tool { display: inline-flex; align-items: center; gap: 0.3rem; }
 /* Part of the tool above it rather than a find of its own — same treatment as a
@@ -2747,8 +2726,6 @@ td.col-stack { position: relative; }
 .contents {
 	/* Mixed into the surface rather than over transparent so it stays opaque when sticky. */
 	background: color-mix(in srgb, var(--accent) 4%, var(--surface));
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
 	padding: 0.7rem 0.9rem;
 	margin: 0 0 2.5rem;
 	display: flex;
@@ -2984,6 +2961,7 @@ td.col-stack { position: relative; }
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	gap: 0.75rem;
+	column-rule: 1px solid var(--border);
 	margin-bottom: 1rem;
 	/* Same pull as .statbar and .table-scroll: every card on the page lines up
 	   on one pair of edges. */
@@ -3100,15 +3078,11 @@ td.col-stack { position: relative; }
 
 .tally {
 	background: var(--surface);
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
 	padding: 0.8rem 0.95rem;
 }
 .tally-head {
 	margin: 0 0 0.6rem;
-	font-size: 0.72rem;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	font-size: 0.875rem;
 	color: var(--text-muted);
 	font-weight: 600;
 	display: flex;
@@ -3127,8 +3101,6 @@ td.col-stack { position: relative; }
 	gap: 0.35rem;
 	font-size: 0.85rem;
 	padding: 0.2rem 0.5rem;
-	border: 1px solid var(--border);
-	border-radius: var(--pill);
 	background: var(--bg);
 }
 .tally-name { white-space: nowrap; }
@@ -3375,8 +3347,6 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 	object-fit: cover;
 	object-position: top center;
 	max-width: 100%;
-	border: 1px solid var(--border);
-	border-radius: 3px;
 	background: var(--surface);
 }
 /*
@@ -3522,8 +3492,6 @@ a.cat-chip:hover, a.cat-chip:focus-visible { color: var(--text); border-color: v
 /* ------------------------------------------------------------ race: picker */
 
 .race-picker {
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
 	background: var(--surface);
 	padding: 1rem;
 	margin-bottom: 1rem;

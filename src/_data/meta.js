@@ -13,10 +13,10 @@ function goatcounterUrl(value) {
 }
 
 export default {
-	title: "speedlify2",
+	title: "speedlify.dracos.co.uk",
 	tagline: "Web performance, measured over time",
 	description:
-		"Lighthouse lab metrics, Axe, and Chrome UX Report field data for a list of sites recorded and compared over time.",
+		"Lighthouse lab metrics, Axe, and Chrome UX Report field data for my sites, and to compare.",
 	// Set to your deployed origin for absolute URLs in metadata.
 	// Where this instance is published. Used for the copy-paste embed snippets,
 	// which land on other people's sites and so need an absolute URL — a path
